@@ -1,0 +1,8 @@
+style
+{
+    background-image: image(), url(paper.gif);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+    padding: 15px;
+}
+style
