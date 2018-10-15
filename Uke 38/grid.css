@@ -1,0 +1,16 @@
+main>p{
+  display: grid;
+  background-image: url(https://i.ytimg.com/vi/mZT4FaskqXU/hqdefault.jpg);
+  text-align: center;
+  padding: 450px;
+  /*padding-left: 30px;
+  padding-right: 20px;*/
+}
+main{display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 15px;
+  grid-column-gap: 0px;
+
+
+}
+h1{color: blue;}
