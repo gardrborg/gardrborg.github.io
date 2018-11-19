@@ -1,0 +1,44 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+input{
+  display:grid;
+  margin-top: 12px;
+}
+h2{
+  text-align: center;
+  font-family: calibri;
+}
+img{
+
+}
+.matchestoday{
+  display: grid;
+  
+  grid-template-columns: 120px 300px;
+  grid-column-gap: 15px;
+}
+.h1{
+  color: blue;
+
+}
