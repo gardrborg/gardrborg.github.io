@@ -34,11 +34,26 @@ img{
 }
 .matchestoday{
   display: grid;
-  
+
   grid-template-columns: 120px 300px;
   grid-column-gap: 15px;
 }
 .h1{
   color: blue;
 
+}
+.Generalnews{
+display: grid;
+/*grid-template-columns: 1fr;
+grid-template-rows: 200px;
+text-align: center;
+grid-auto-rows: minmax(200px,auto);*/
+
+}
+body{
+
+    margin-left: 150px;
+    margin-right: 150px;
+    display: grid;
+    grid-template-columns:1fr,3fr;
 }
