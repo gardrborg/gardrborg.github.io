@@ -1,0 +1,39 @@
+main{
+  grid-template-columns:1fr;
+  }
+  nav{
+    position: sticky;
+    top: 0;
+    position: -webkit-sticky;
+  }
+
+  ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+  }
+  li {
+      float: left;
+  }
+
+  li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+  }
+
+  li a:hover {
+      background-color: #111;
+  }
+  input{
+    display:grid;
+    margin-top: 12px;
+    }
+    body{
+      margin-left: 150px;
+      margin-right: 150px;
+    }
