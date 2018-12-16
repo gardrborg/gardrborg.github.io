@@ -39,3 +39,14 @@ li a:hover {
 input{
   display:grid;
   margin-top: 12px;
+}
+.Matches{
+  margin-left: 15px; color: black;
+}
+
+  footer{
+  background-color: #262626;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: white;
+  }

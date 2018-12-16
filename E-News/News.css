@@ -1,5 +1,8 @@
 main{
   grid-template-columns:1fr;
+  font-family: "arial", sans-serif;
+  padding-top: 50px;
+  padding-bottom: 50px;
   }
   nav{
     position: sticky;
@@ -36,4 +39,10 @@ main{
     body{
       margin-left: 150px;
       margin-right: 150px;
+    }
+    footer{
+    background-color: #262626;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: white;
     }

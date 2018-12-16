@@ -50,14 +50,18 @@ text-align: center;
 grid-auto-rows: minmax(200px,auto);*/
 
 }
-main{
+body{
 
     margin-left: 150px;
     margin-right: 150px;
     display: grid;
     grid-template-columns:1fr 1fr 1fr;
+    padding-bottom: 50px;
 }
-body{
-  Margin-left: 150px;
-  Margin-right: 150px;
+
+footer{
+  background-color: #262626;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: white;
 }
