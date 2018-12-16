@@ -4,8 +4,9 @@ body{
 
   main{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   margin-left: 50px;
+  font-size: 15px;
  }
 nav{
   position: sticky;
@@ -41,6 +42,7 @@ input{
   display:grid;
   margin-top: 12px;
   }
+
   footer{
   background-color: #262626;
   display: grid;
