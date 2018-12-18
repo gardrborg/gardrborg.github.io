@@ -40,12 +40,38 @@ body{
 }
 main{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
+h4{
+  font-size: 30px;
+}
+.GNews{
+  display: grid;
+  grid-column:
+}
+h3{
+  font-size: 30px;
+}
+.General{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 20px;
+
+}
+
+.Mtoday{
+    margin-top: 20px;
+    border: solid 5px black;
+    width: 270px;
+    border-radius: 20px;
+    grid-column: 1;
+     }
+
 
 footer{
   background-color: #262626;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   color: white;
+  margin-top: 20px;
 }
