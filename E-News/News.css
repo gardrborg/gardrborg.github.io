@@ -39,6 +39,7 @@ main{
     body{
       margin-left: 150px;
       margin-right: 150px;
+      font-family: "Arial",Times,sans-serif;
     }
     footer{
     background-color: #262626;

@@ -1,6 +1,8 @@
 body{
   margin-left: 150px;
   margin-right: 150px;
+  font-family: "Arial",Times,sans-serif;
+
   }
 
   main{
@@ -41,8 +43,10 @@ input{
   margin-top: 12px;
 }
 .Matches{
-  margin-left: 15px; color: black;
+  background-color: lightb
+
 }
+
 
   footer{
   background-color: #262626;
@@ -50,3 +54,63 @@ input{
   grid-template-columns: 1fr 1fr 1fr;
   color: white;
   }
+  h1 {
+    font-size: 50px;
+  }
+  #ENews{
+    margin-bottom:
+  }
+.CSGO{
+  display: grid;
+  padding: 7px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 20px;
+  border: solid black 4px;
+  border-radius: 20px;
+}
+.Overwatch{
+  display: grid;
+  padding: 7px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 20px;
+  margin-left: 5px;
+  border: solid black 4px;
+  border-radius: 20px;
+}
+.Hearthstone{
+  display: grid;
+  padding: 7px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 20px;
+  border: solid black 4px;
+  border-radius: 20px;
+}
+.LOL{
+  display: grid;
+  padding: 7px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 20px;
+  margin-left: 5px;
+  border: solid black 4px;
+  border-radius: 20px;
+}
+.pubg{
+  display: grid;
+  padding: 7px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 20px;
+  margin-left: 5px;
+  border: solid black 4px;
+  border-radius: 20px;
+
+}
+.Fortnite{
+  display: grid;
+  padding: 7px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 20px;
+  margin-left: 5px;
+  border: solid black 4px;
+  border-radius: 20px;
+  grid-row:
+}
