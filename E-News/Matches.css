@@ -2,6 +2,7 @@ body{
   margin-left: 150px;
   margin-right: 150px;
   font-family: "Arial",Times,sans-serif;
+  background-color: lightgrey;
 
   }
 
@@ -9,6 +10,7 @@ body{
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-left: 40px;
+  
  }
 nav{
   position: sticky;
@@ -59,6 +61,9 @@ input{
   }
   #ENews{
     margin-bottom:
+  }
+  .background{
+    background-color: white;
   }
 .CSGO{
   display: grid;
