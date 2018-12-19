@@ -35,13 +35,19 @@ body{
     margin-left: 150px;
     margin-right: 150px;
     display: grid;
-    grid-template-columns:
+    grid-template-columns;
     padding-bottom: 50px;
+    font-family: "Arial",Times,sans-serif;
 }
 main{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+#ENews{
+  margin-top: 0px;
+  margin-bottom:0px;
+  padding-top: 15px;
+  }
 h4{
   font-size: 30px;
 }
@@ -75,4 +81,8 @@ footer{
   grid-template-columns: 1fr 1fr 1fr;
   color: white;
   margin-top: 20px;
+}
+footer ul{
+  margin-top:0px;
+  padding-left:
 }

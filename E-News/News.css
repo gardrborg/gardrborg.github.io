@@ -28,6 +28,14 @@ main{
       padding: 14px 16px;
       text-decoration: none;
   }
+  #ENews{
+    margin-top: 0px;
+    margin-bottom:0px;
+    padding-top: 15px;
+    }
+    .bakgrunn{
+      background-color: white;
+    }
 
   li a:hover {
       background-color: #111;
@@ -40,6 +48,7 @@ main{
       margin-left: 150px;
       margin-right: 150px;
       font-family: "Arial",Times,sans-serif;
+      background-color: #DFE0E5;
     }
     footer{
     background-color: #262626;
