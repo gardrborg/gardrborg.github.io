@@ -12,6 +12,7 @@ body{
     margin-top: 0px;
     margin-bottom:0px;
     padding-top: 15px;
+    padding-left: 15px;
     }
 
   main{
@@ -54,8 +55,7 @@ input{
   display:grid;
   margin-top: 12px;
 }
-.Matches{
-  background-color: lightb
+
 
 }
 footer ul{
