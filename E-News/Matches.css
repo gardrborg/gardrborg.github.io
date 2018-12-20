@@ -4,17 +4,6 @@ body{
   font-family: "Arial",Times,sans-serif;
   background-color: #DFE0E5;
   }
-  .bakgrunn{
-    background-color: white;
-    margin-top: 0px;
-  }
-  #ENews{
-    margin-top: 0px;
-    margin-bottom:0px;
-    padding-top: 15px;
-    padding-left: 15px;
-    }
-
   main{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -127,3 +116,13 @@ footer ul{
   border-radius: 20px;
   grid-row: auto;
 }
+.bakgrunn{
+  background-color: white;
+  margin-top: 0px;
+}
+#ENews{
+  margin-top: 0px;
+  margin-bottom:0px;
+  padding-top: 15px;
+  padding-left: 15px;
+  }
