@@ -56,14 +56,11 @@ input{
   margin-top: 12px;
 }
 
-
-}
 footer ul{
   padding-left: 20px;
   padding-top: 10px;
   padding-bottom: 5px;
 }
-
 
   footer{
   background-color: #262626;
@@ -130,5 +127,5 @@ footer ul{
   margin-left: 5px;
   border: solid black 4px;
   border-radius: 20px;
-  grid-row:
+  grid-row: auto;
 }

@@ -35,19 +35,24 @@ body{
     margin-right: 150px;
     display: grid;
     grid-template-columns;
-    padding-bottom: 50px;
+    padding-bottom: 0px;
     font-family: "Arial",Times,sans-serif;
     background-color: #DFE0E5;
 }
 main{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  background-color: white;
+  padding-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 20px;
 }
 #ENews{
   margin-top: 0px;
   margin-bottom:0px;
   padding-top: 15px;
   padding-left: 5px;
+  font-size: 50px;
   }
 h4{
   font-size: 30px;
@@ -62,7 +67,7 @@ h3{
 }
 .General{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   margin-left: 20px;
 
 }
@@ -73,6 +78,7 @@ h3{
     width: 270px;
     border-radius: 20px;
     grid-column: 1;
+    grid-row: auto;
      }
 .list{
 padding-left: 70px;
@@ -89,7 +95,7 @@ footer{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   color: white;
-  margin-top: 20px;
+
 }
 footer ul{
   padding-left: 20px;

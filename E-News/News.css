@@ -56,6 +56,11 @@ main{
       font-family: "Arial",Times,sans-serif;
       background-color: #DFE0E5;
     }
+    footer ul{
+      padding-left: 20px;
+      padding-top: 10px;
+      padding-bottom: 5px;
+    }
     footer{
     background-color: #262626;
     display: grid;
