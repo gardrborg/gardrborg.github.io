@@ -112,7 +112,6 @@ footer ul{
 .pubg{
   display: grid;
   padding: 7px;
-  grid-template-columns: auto;
   margin-bottom: 20px;
   margin-left: 5px;
   border: solid black 4px;
@@ -122,7 +121,6 @@ footer ul{
 .Fortnite{
   display: grid;
   padding: 7px;
-  grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 20px;
   margin-left: 5px;
   border: solid black 4px;
