@@ -1,0 +1,46 @@
+@media (max-width: 1600px) {
+  body{
+    background-color: yellow;
+  }
+   }
+@media (max-width: 1200px) {
+    body {
+      background-image: url("matrett4.jpg");
+    }
+    }
+@media (max-width: 1000px) {
+      body{
+        background-image: url("matrett3.jpg");
+      }
+      }
+@media (max-width: 800px) {
+        body{
+          background-image: url("matrett2.jpg");
+        }
+        }
+@media (max-width: 600px) {
+          body{
+            background-image: url("matrett1.jpg");
+          }
+          header nav{
+            flex-direction: column;
+            align-items: center;
+          }
+         }
+
+
+header nav{
+  display: flex;
+  flex-direction: row;  
+  justify-content: space-around;
+  border-bottom: solid black 1px;
+  border-top: solid black 1px;
+}
+header{
+  background-color: grey;
+  width: 90%;
+  margin: auto;
+}
+header nav a:last-child{
+  margin-left: auto;
+}

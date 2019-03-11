@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+<script src="https://www.gstatic.com/firebasejs/5.8.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDMzIbhxdgFtD-KCp5CrkW6FPyRmge9C2k",
+    authDomain: "database-512b2.firebaseapp.com",
+    databaseURL: "https://database-512b2.firebaseio.com",
+    projectId: "database-512b2",
+    storageBucket: "database-512b2.appspot.com",
+    messagingSenderId: "951629021213"
+  };
+  firebase.initializeApp(config);
+</script>
+
+
+  <script>
+    const db = firebase.database();
+    const kontaktliste = db.ref("kontaktliste");
+    const kontakter = db.ref("kontakter");
+    const venner = db.ref("venner")
+    kontaktliste.push(
+    {
+      "fornavn": "Andreas",
+      "mellomnavn": "Tanke",
+      "Etternavn": "Holm",
+      "Tlf-nummer": "90020069",
+      "Bosted": "Lesterudkroken 29",
+    }
+  )
+    kontaktliste.push(
+    {
+      "fornavn": "jakob",
+      "mellomnavn": "Andreas",
+      "Etternavn": "Mikelsen",
+      "Tlf-nummer": "48139390",
+      "Bosted": "høn gårsvei",
+    }
+    )
+    kontaktliste.push(
+    {
+      "fornavn": "Daniel",
+      "mellomnavn": "Førland",
+      "Etternavn": "Knudsen",
+      "Tlf-nummer": "94825090",
+      "Bosted": "gamle drammens vei",
+    }
+    )
+    kontaktliste.push(
+    {
+      "fornavn": "Eirik",
+      "mellomnavn": "",
+      "Etternavn": "Nese",
+      "Tlf-nummer": "48264340",
+      "Bosted": "solvangveien 10",
+    }
+    )
+
+const billGates = kontakter.child("90440000");
+billGates.set({
+  navn: "Bill Gates",
+  epost: "bill@microsoft.com"
+});
+
+const georgeBush = kontakter.child("9044000");
+billGates.set({
+  navn: "George Bush",
+  epost: "george@us.com"
+});
+</script>
+
+
+<section>
+      <form id="skjema">
+          <input id="inpNavn" type="text" required placeholder="navn">
+          <input id="inpTelefon" type="text" required placeholder="telefon">
+          <input id="inpEpost" type="text" required placeholder="epost">
+          <button type="submit">Registrer kontakt</button>
+      </form>
+  </section>
+  <section id="secKontakter">
+  </section>
+
+
+<script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDMzIbhxdgFtD-KCp5CrkW6FPyRmge9C2k",
+    authDomain: "database-512b2.firebaseapp.com",
+    databaseURL: "https://database-512b2.firebaseio.com",
+    projectId: "database-512b2",
+    storageBucket: "database-512b2.appspot.com",
+    messagingSenderId: "951629021213"
+  };
+  firebase.initializeApp(config);
+</script>
+
+  const skjema = document.querySelector("#skjema");
+  const inpNavn = document.querySelector("#inpNavn");
+  const inpTelefon = document.querySelector("#inpTelefon");
+  const inpEpost = document.querySelector("#inpEpost");
+  const secKontakter = document.querySelector("#secKontakter");
+  // Firebase
+  // Registrere en ny kontakt
+  function registrerKontakt(evt) {
+      evt.preventDefault();
+      const key = inpTelefon.value;
+      const data = {
+          navn: inpNavn.value,
+          epost: inpEpost.value
+      };
+      const kontakt = kontakter.child(key);
+      kontakt.set(data);
+
+      // Nuller ut skjemaet
+      skjema.reset();
+  }
+  // Knytter funksjonen til hendelsen at skjemaet blir sendt inn
+  skjema.addEventListener("submit", registrerKontakt);
+
+    </script>
+<script type="text/javascript">
+
+
+function visKontakt(snap) {
+    const telefon = snap.key; // Primær-nøkkelen
+    const kontakt = snap.val(); // Dataene til kontakten
+    secKontakter.innerHTML += `
+        <div>${kontakt.navn}</div>
+        <div>${telefon}</div>
+        <div>${kontakt.epost}</div>
+    `;
+}
+// Knytter funksjonen til hendelsen at skjemaet blir sendt inn
+skjema.addEventListener("submit", registrerKontakt);
+// Starter funksjonen når det blir lagt til en kontakt
+kontakter.on("child_added", visKontakt);
+</script>
+
+
+
+
+  </body>
+</html>

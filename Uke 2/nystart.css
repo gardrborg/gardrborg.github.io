@@ -1,0 +1,28 @@
+main{
+  width: 90%;
+  margin: auto;
+  background-color: grey;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+@media (max-width: 1200px) {
+  main{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 900px) {
+  main{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 600px) {
+  main{
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.medium{
+  width: 100%;
+}
