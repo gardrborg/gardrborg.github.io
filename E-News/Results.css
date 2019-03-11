@@ -8,7 +8,6 @@ footer ul{
   padding-top: 10px;
   padding-bottom: 5px;
 }
-
   main{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -17,23 +16,11 @@ footer ul{
   font-size: 15px;
   padding-bottom: 0px;
  }
- .bakgrunn{
-   background-color: white;
-
- }
- #ENews{
-   margin-top: 0px;
-   margin-bottom:0px;
-   padding-top: 15px;
-   padding-left: 15px;
-   }
 nav{
   position: sticky;
   top: 0;
   position: -webkit-sticky;
 }
-
-
 ul {
     list-style-type: none;
     margin: 0;
@@ -69,3 +56,12 @@ input{
   grid-template-columns: 1fr 1fr 1fr;
   color: white;
 }
+#ENews{
+  margin-top: 0px;
+  margin-bottom:0px;
+  padding-top: 15px;
+  padding-left: 15px;
+  }
+  .bakgrunn{
+    background-color: white;
+  }
