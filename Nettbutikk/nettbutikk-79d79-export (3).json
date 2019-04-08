@@ -1,0 +1,356 @@
+{
+  "Varer" : {
+    "Bukse" : {
+      "B001" : {
+        "Bilde" : "https://cdn.fashiola.no/L540323053/gucci-gabardine-stretch-pant-with-stripe.jpg",
+        "Farge" : "Svart",
+        "Merke" : "Gucci",
+        "Pris" : "6300",
+        "Størrelse" : "ML"
+      },
+      "B002" : {
+        "Bilde" : "https://cdn-production.looklive.com/YVMMouYP2ahdaGDOYy4PPOafgvg=/34x3:520x489/400x400/filters:extend(1,ffffff)/a9e496ca-c47e-44fb-831f-1c699dfb2a5a",
+        "Farge" : "Svart",
+        "Merke" : "Versace",
+        "Pris" : "2300",
+        "Størrelse" : "SML"
+      },
+      "B003" : {
+        "Bilde" : "https://cdn-production.looklive.com/fofZmbgStnNwR8J7aIb3trghW9M=/200x0:1200x1000/400x400/eb267f7d-873d-4f3d-8c77-6c8d7f90fb78",
+        "Farge" : "Gul",
+        "Merke" : "Supreme",
+        "Pris" : "2000",
+        "Størrelse" : "SML"
+      },
+      "B004" : {
+        "Bilde" : "https://media.brandalley.co.uk/catalog/product/cache/1/small_image/400x400/e4d92e6aceaad517e7b5c12e0dc06587/1/6/16106796-1_1.jpg",
+        "Farge" : "Svart",
+        "Merke" : "HugoBoss",
+        "Pris" : "1500",
+        "Størrelse" : "SL"
+      },
+      "B005" : {
+        "Bilde" : "http://www.dapurkarir.com/image/cache/data/category_8/hugo_by_hugo_boss_mens_contemporary_slim_fit_suit_trouser_pant_lbqluaqae-400x400.jpg",
+        "Farge" : "Blå",
+        "Merke" : "HugoBoss",
+        "Pris" : "1300",
+        "Størrelse" : "SM"
+      },
+      "B006" : {
+        "Bilde" : "https://cdn-production.looklive.com/NW2TutD4-XOMrxHwe7Wv6R8AM5Q=/0x0:1762x1762/400x400/filters:extend()/c69a3a70-32bd-4fa1-8778-6317f8258090",
+        "Farge" : "Hvit",
+        "Merke" : "LouisVuitton",
+        "Pris" : "13000",
+        "Størrelse" : "SML"
+      }
+    },
+    "Gucci" : {
+      "G001" : {
+        "Bilde" : "https://icestork.com/wp-content/uploads/2018/10/Snake-Gucc-s-400x400.jpg",
+        "Farge" : "Svart",
+        "Plagg" : "Genser",
+        "Pris" : "5000",
+        "Størrelse" : "SML"
+      },
+      "G002" : {
+        "Bilde" : "https://cdn-production.looklive.com/x3Z93FzZp0RMfhvECmfEEBk1DvQ=/0x0:800x800/400x400/4a5bce5a-8d79-421c-af0e-18a29f142b1d",
+        "Farge" : "Hvit",
+        "Plagg" : "Bukse",
+        "Pris" : "7000",
+        "Størrelse" : "SML"
+      },
+      "G003" : {
+        "Bilde" : "https://matsisland.com/wp-content/uploads/2018/12/IMG_0781-400x400.jpg",
+        "Farge" : "Svart",
+        "Plagg" : "Genser",
+        "Pris" : "2500",
+        "Størrelse" : "ML"
+      },
+      "G004" : {
+        "Bilde" : "https://cdn-production.looklive.com/7PT8pUiELEC347jG3ytizuLD_rg=/0x0:740x740/400x400/filters:extend()/47e312fa-b29f-43bd-8642-c5b3a082caf0",
+        "Farge" : "Brun",
+        "Plagg" : "Sokker",
+        "Pris" : "1000",
+        "Størrelse" : "SML"
+      },
+      "G005" : {
+        "Bilde" : "https://cdn-production.looklive.com/48slH1sBEMMj5UnJyrUlU1L-kNw=/0x0:1200x1200/400x400/eeb79fd7-4344-4ef0-be4e-29b68e08ffb2  ",
+        "Farge" : "Brun",
+        "Plagg" : "Genser",
+        "Pris" : "4000",
+        "Størrelse" : "SML"
+      },
+      "G006" : {
+        "Bilde" : "https://cdn-production.looklive.com/nET4rCORzWPwNkEfLsg44Qv9cNs=/0x0:1200x1200/400x400/5ccdc6dd-325a-43dc-862b-73eccb760370",
+        "Farge" : "Blå",
+        "Plagg" : "Sokker",
+        "Pris" : "900",
+        "Størrelse" : "ML"
+      }
+    },
+    "HugoBoss" : {
+      "HG001" : {
+        "Bilde" : "http://www.focuspt.co.uk/image/cache/data/category_15/men_clothing_hugo_boss_leisure_wear_hugo_boss_men_039s_grey_heritage_jogging_bottoms_e4iiz8j8f_trousers_jeans-400x400.jpg",
+        "Farge" : "Grå",
+        "Plagg" : "bukse",
+        "Pris" : "2000",
+        "Størrelse" : "SL"
+      },
+      "HG002" : {
+        "Bilde" : "https://www.timinis.com/pub/media/catalog/product/cache/small_image/400x400/beff4985b56e3afdbeabfc89641a4582/9/0/9021976-PRE_THUMB_10.jpg",
+        "Farge" : "Hvit",
+        "Plagg" : "Genser",
+        "Pris" : "1000",
+        "Størrelse" : "SM"
+      },
+      "HG003" : {
+        "Bilde" : "http://www.pahirerentals.co.uk/image/cache/data/category_23/men_clothing_blue_hugo_boss_akatrusco_jumper_cotton_a8gzjcq2b-400x400.jpg",
+        "Farge" : "Grå",
+        "Plagg" : "Genser",
+        "Pris" : "1500",
+        "Størrelse" : "SML"
+      },
+      "HG004" : {
+        "Bilde" : "http://www.generalstonemanagement.com/image/cache/data/category_17/hugo-boss-large-logo-crew-neck-sweatshirt-overhead-crew-neck-d865852-jfvpnbo-4169-400x400.jpg",
+        "Farge" : "Blå",
+        "Plagg" : "Genser",
+        "Pris" : "2000",
+        "Størrelse" : "ML"
+      },
+      "HG005" : {
+        "Bilde" : "http://www.babyblooming.co.uk/image/cache/data/category_19/hugo_boss_relaxed_fit_trousers_in_virgin_wool_flannel_blue_men_clothing_jvtsp5hgh-400x400.jpg",
+        "Farge" : "Svart",
+        "Plagg" : "Bukse",
+        "Pris" : "1500",
+        "Størrelse" : "SML"
+      },
+      "HG006" : {
+        "Bilde" : "http://www.focuspt.co.uk/image/cache/data/category_15/men_clothing_hugo_by_hugo_boss_c_genisis_slim_fit_flannel_trousers_vzqzztyl7_trousers_jeans-400x400.jpg",
+        "Farge" : "Svart",
+        "Plagg" : "Bukse",
+        "Pris" : "2000",
+        "Størrelse" : "SML"
+      }
+    },
+    "Jakke" : {
+      "J001" : {
+        "Bilde" : "http://www.nailsbykelly.co.uk/image/cache/data/category_14/mens_hugo_boss_gorin_suede_jacket_men_8dr23mo78-400x400.jpg",
+        "Farge" : "Svart",
+        "Merke" : "HugoBoss",
+        "Pris" : "4000",
+        "Størrelse" : "SML"
+      },
+      "J002" : {
+        "Bilde" : "http://www.fashionista-outlet.com/media/catalog/product/cache/3/image/400x400/9df78eab33525d08d6e5fb8d27136e95/s/v/sv19f036343900_01.test_4.jpg",
+        "Farge" : "Svart",
+        "Merke" : "Versace",
+        "Pris" : "12000",
+        "Størrelse" : "SML"
+      },
+      "J003" : {
+        "Bilde" : "https://static.vibe.com/files/2018/07/Gucci-Dapper-Dan-0G-Leather-Bomber-1532621051-400x400.jpg",
+        "Farge" : "Rød",
+        "Merke" : "Gucci",
+        "Pris" : "4000",
+        "Størrelse" : "SML"
+      },
+      "J004" : {
+        "Bilde" : "https://cdn-production.looklive.com/LOHnrAtTI4J5vrpNakjcJdyg_Mo=/0x0:1174x1174/400x400/aedf3e31-af04-460a-b3b4-92cd1782e6b8",
+        "Farge" : "Svart",
+        "Merke" : "LouisVuitton",
+        "Pris" : "8000",
+        "Størrelse" : "SM"
+      },
+      "J005" : {
+        "Bilde" : "https://cdn-production.looklive.com/3XkN2fqiBUOSh5T_42bmrbm1DTU=/200x0:1200x1000/400x400/3d52ac8f-b83d-46ec-8b24-8f408c231b3d",
+        "Farge" : "Svart",
+        "Merke" : "Supreme",
+        "Pris" : "8000",
+        "Størrelse" : "SML"
+      },
+      "J006" : {
+        "Bilde" : "http://www.bernialgarecuestre.com/image/cache/data/category_9/versace-collection-greca-bomber-jacket-608153-efytwme--3676-400x400.jpg",
+        "Farge" : "Svart",
+        "Merke" : "Versace",
+        "Pris" : "7000",
+        "Størrelse" : "SM"
+      }
+    },
+    "LouisVuitton" : {
+      "LV001" : {
+        "Bilde" : "https://matsisland.com/wp-content/uploads/2019/01/IMG_2237-400x400.jpg",
+        "Farge" : "Svart",
+        "Plagg" : "Bukse",
+        "Pris" : "3000",
+        "Størrelse" : "SML"
+      },
+      "LV002" : {
+        "Bilde" : "https://www.tarzpabuc.com/wp-content/uploads/2018/01/Louis-Vuitton-04-400x400.jpeg",
+        "Farge" : "Hvit",
+        "Plagg" : "Genser",
+        "Pris" : "2500",
+        "Størrelse" : "SML"
+      },
+      "LV003" : {
+        "Bilde" : "https://matsisland.com/wp-content/uploads/2018/12/IMG_1098-400x400.jpg",
+        "Farge" : "Svart",
+        "Plagg" : "Bukse",
+        "Pris" : "2000",
+        "Størrelse" : "SML"
+      },
+      "LV004" : {
+        "Bilde" : "https://cdn-production.looklive.com/7f47D5x6-fv0WpW2drp96fWVYrA=/0x0:1334x1334/400x400/filters:extend()/2411ef36-cf69-4381-8b9d-e77189802e2a",
+        "Farge" : "Blå",
+        "Plagg" : "Genser",
+        "Pris" : "3000",
+        "Størrelse" : "ML"
+      },
+      "LV005" : {
+        "Bilde" : "https://www.tarzpabuc.com/wp-content/uploads/2018/01/Louis-Vuitton-03-400x400.jpeg",
+        "Farge" : "Svart",
+        "Plagg" : "Genser",
+        "Pris" : "2000",
+        "Størrelse" : "SM"
+      },
+      "LV006" : {
+        "Bilde" : "https://cdn-production.looklive.com/by2tfQjUaM51CyKIQ20wXl8znWg=/0x0:1364x1364/400x400/0e3fc2e3-547b-4255-bbac-a331757b25df",
+        "Farge" : "Blå",
+        "Plagg" : "Genser",
+        "Pris" : "4000",
+        "Størrelse" : "SML"
+      }
+    },
+    "Sko" : {
+      "S001" : {
+        "Bilde" : "https://media-cdn.yoogiscloset.com/media/catalog/product/cache/1/image/400x400/9df78eab33525d08d6e5fb8d27136e95/1/1/11219652_01.jpg",
+        "Farge" : "Svart",
+        "Merke" : "LouisVuitton",
+        "Pris" : "2000",
+        "Størrelse" : "ML"
+      },
+      "S002" : {
+        "Bilde" : "http://www.hammonds.ie/wp-content/uploads/2018/08/BOSS-GREEN-PARKOUR-RUNN-TRAINERS-BLACK-Gold-1-400x400.jpg",
+        "Farge" : "Svart",
+        "Merke" : "HugoBoss",
+        "Pris" : "3000",
+        "Størrelse" : "SL"
+      },
+      "S003" : {
+        "Bilde" : "http://www.veewon.co.uk/image/cache/data/category_35/men_shoes_gucci_guccisima_hi_top_sneakers_blsg2x305-400x400.jpg",
+        "Farge" : "Svart",
+        "Merke" : "Gucci",
+        "Pris" : "10000",
+        "Størrelse" : "SML"
+      },
+      "S004" : {
+        "Bilde" : "https://sellam.cm/image/cache/catalog/BST/BST%20(83)-400x400.jpg",
+        "Farge" : "Rød",
+        "Merke" : "Supreme",
+        "Pris" : "6000",
+        "Størrelse" : "ML"
+      },
+      "S005" : {
+        "Bilde" : "http://www.dapurkarir.com/image/cache/data/category_4/versace_collection_mens_medusa_logo_low_top_sneakers_shoes_iibitbfxu-400x400.jpg",
+        "Farge" : "Hvit",
+        "Merke" : "Versace",
+        "Pris" : "5000",
+        "Størrelse" : "SML"
+      },
+      "S006" : {
+        "Bilde" : "http://dvorfootball.ru/media/catalog/product/cache/1/image/400x400/9df78eab33525d08d6e5fb8d27136e95/g/u/gucci-low-top-sneakers-002.jpg",
+        "Farge" : "Hvit",
+        "Merke" : "Gucci",
+        "Pris" : "3000",
+        "Størrelse" : "ML"
+      }
+    },
+    "Supreme" : {
+      "SUP001" : {
+        "Bilde" : "https://icestork.com/wp-content/uploads/2018/08/666-2-400x400.jpg",
+        "Farge" : "Hvit",
+        "Plagg" : "Genser",
+        "Pris" : "5000",
+        "Størrelse" : "SL"
+      },
+      "SUP002" : {
+        "Bilde" : "https://cdn-production.looklive.com/UKj1iE1qry8LY4c_M9aBlZoV6MI=/0x0:1322x1322/400x400/filters:extend()/f182dd47-e8c6-4597-abbe-ea77d02b0a3c",
+        "Farge" : "Brun",
+        "Plagg" : "Bukse",
+        "Pris" : "2000",
+        "Størrelse" : "SML"
+      },
+      "SUP003" : {
+        "Bilde" : "https://www.tolavintage.com/wp-content/uploads/2018/12/2018111558130a92dc994a149763395432a000eb_sqr-400x400.jpg",
+        "Farge" : "Svart",
+        "Plagg" : "Genser",
+        "Pris" : "4000",
+        "Størrelse" : "ML"
+      },
+      "SUP004" : {
+        "Bilde" : "http://img.diytrade.com/smimg/2411474/45935267-7823787-1/Wholesale_SUPREME_MEN_THICKEN_HOODIE_COAT_JACKET_SWEATER/d8d7.jpg",
+        "Farge" : "Gul",
+        "Plagg" : "Genser",
+        "Pris" : "2000",
+        "Størrelse" : "SML"
+      },
+      "SUP005" : {
+        "Bilde" : "a",
+        "Farge" : "a",
+        "Plagg" : "Sokker",
+        "Pris" : "a",
+        "Størrelse" : "SML"
+      },
+      "SUP006" : {
+        "Bilde" : "supremesocks.jpg",
+        "Farge" : "Red",
+        "Plagg" : "Sokker",
+        "Pris" : "800",
+        "Størrelse" : "SML"
+      }
+    },
+    "Versace" : {
+      "V001" : {
+        "Bilde" : "https://media.brandalley.co.uk/catalog/product/cache/1/small_image/400x400/e4d92e6aceaad517e7b5c12e0dc06587/1/5/15573675-1.jpg",
+        "Farge" : "Brun",
+        "Plagg" : "Sokker",
+        "Pris" : "1500",
+        "Størrelse" : "ML"
+      },
+      "V002" : {
+        "Bilde" : "http://www.breanparkfarm.co.uk/image/cache/data/category_24/versace_logo_sweatshirt_cotton_black_men_clothing_vddxyotn8-400x400.jpg",
+        "Farge" : "Svart",
+        "Plagg" : "Genser",
+        "Pris" : "4000",
+        "Størrelse" : "SL"
+      },
+      "V003" : {
+        "Bilde" : "http://www.locabo.co.uk/image/cache/data/category_13/versace_baroque_logo_hoodie_cotton_black_men_clothing_ny1xt2kvp-400x400.jpg",
+        "Farge" : "Svart",
+        "Plagg" : "Bukse",
+        "Pris" : "7000",
+        "Størrelse" : "M"
+      },
+      "V004" : {
+        "Bilde" : "http://www.coastvisitors.co.uk/image/cache/data/category_20/versace-printed-pullover-sweaters-black-mens-clothing-zz89hi9q6-1436-400x400.jpg",
+        "Farge" : "Svart",
+        "Plagg" : "Genser",
+        "Pris" : "8000",
+        "Størrelse" : "SML"
+      },
+      "V005" : {
+        "Bilde" : "http://us01.imgcdn.ymcart.com/26369/thumb/400x400/2018/05/31/5/e/5e665dcff41cf2b3.jpg",
+        "Farge" : "Svart",
+        "Plagg" : "Genser",
+        "Pris" : "4000",
+        "Størrelse" : "SML"
+      },
+      "V006" : {
+        "Bilde" : "https://sellam.cm//image/cache/catalog/AUT/Jeans/AUT%20(17)-400x400.jpg",
+        "Farge" : "Svart",
+        "Plagg" : "Bukse",
+        "Pris" : "2000",
+        "Størrelse" : "S"
+      }
+    }
+  }
+}
