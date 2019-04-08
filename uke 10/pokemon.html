@@ -47,11 +47,15 @@
               //Javascript-funksjon som skriver varene ut på nettsiden i main-elementet
             console.log(snapshot.val());
             let pokeSnap = snapshot.val();
+            let key = snapshot.key;
+
+
             main.innerHTML +=`
                 <article class="Pokemon">
                   <h1>${pokeSnap.Name}</h1>
-                  <img src="${pokeSnap.ImageURL}" alt="">
+                  <img src="${pokeSnap.ImageURL}">
                   <p>${pokeSnap.Type1} - ${pokeSnap.Type2}</p>
+                  <a href="pokestats.html?id=${key}">Detaljer</a>
                 </article>
             `
         }
@@ -90,11 +94,3 @@
 
   </body>
 </html>
-
-
-
-
-normalisering=teknikker som blir brukt til å unngå dobbeltlaring og duplisering av data.
-atomærkrav=atomærkrav er at du skal dele opp informasjonen så mye du kan mendet skal ikke bli ødelagt.
-entitesitering= skriften mellom boksene er entitetisering.
-primærnøkkel=det er navn som gjør at vi kan fort finne opplysninger om et bestemt objekt 
