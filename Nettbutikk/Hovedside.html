@@ -27,8 +27,7 @@
     <header>
       <nav>
         <button onclick="visAlle()">Alle</button>
-        <button onclick="visBukser()">Grass</button>
-        <button onclick="location.href='chat.html'">Chat</button>
+        <button onclick="visSvarte()">Svarte klær</button>
         <button onclick="visElectric()">Electric</button>
         <button onclick="visAtilD()">a til d</button>
 
@@ -51,12 +50,15 @@
             let Varer = snapshot.val();
             let key = snapshot.key;
 
-// jeg trenger helt klart hjelp til å skrive koden under, har faktisk ikke sjangs til å gjøre det selv. jeg har ikke rukket å endre alt fra pokemon men jeg får gjort det til neste gang. jeg satser på å få høy måloppnåelse så skal jobbe med det en god del i påskeferien. 
+// jeg trenger helt klart hjelp til å skrive koden under, har faktisk ikke sjangs til å gjøre det selv.
+//jeg har ikke rukket å endre alt fra pokemon men jeg får gjort det til neste gang. jeg satser på å få høy måloppnåelse så skal jobbe med det en god del i påskeferien.
+// Detter er selvfølgelig bare et utkast, så kommer til å endre ting etterhvert.
             main.innerHTML +=`
                 <article class="Varer">
                   <h1>${Varer.Name}</h1>
                   <img src="${pokeSnap.ImageURL}">
                   <p>Price: ${Varer["Pris"]}</p>
+                  <p>Merke: ${Varer ["Merke"]}
 
                   <a href="pokestats.html?id=${key}">Detaljer</a>
                 </article>
@@ -66,32 +68,32 @@
           main.innerHTML = ``
           Varer.on("child_added",visVarer);
         }
-        /*
-        function visGrass(){
+
+        function visSvarte(){
           main.innerHTML = ``
-          pokemon
-            .orderByChild("Type1")
-            .equalTo("Grass")
-            .on("child_added",visPokemon);
-            pokemon
-              .orderByChild("Type2")
-              .equalTo("Grass")
-              .on("child_added",visPokemon);
+          Varer
+            .orderByChild("Bukser")
+            .equalTo("Svart")
+            .on("child_added",visVarer);
+            Varer
+              .orderByChild("Genser")
+              .equalTo("Svart")
+              .on("child_added",visVarer);
         }
-        function visElectric(){
+        function visSupreme(){
           main.innerHTML = ``
-          pokemon
-            .orderByChild("Type1")
-            .equalTo("Electric")
-            .on("child_added",visPokemon);
+          Varer
+            .orderByChild("Supreme")
+            .equalTo("Supreme")
+            .on("child_added",visVarer);
         }
         function visAtilD(){
           main.innerHTML = ``
-          pokemon
-          .orderByChild("Name")
+          Varer
+          .orderByChild("Merke")
           .startAt("A")
-          .endAt("D")
-          .on("child_added",visPokemon);
+          .endAt("V")
+          .on("child_added",visVarer);
         }
         */
 
