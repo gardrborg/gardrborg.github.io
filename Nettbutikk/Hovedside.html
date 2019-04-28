@@ -2,8 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Pokemon</title>
-    <link rel="stylesheet" href="pekom.css">
+    <title>Nettbutikk</title>
+    <link rel="stylesheet" href="Hovedside.css">
 
 
 
@@ -28,13 +28,14 @@
       <nav>
         <button onclick="visAlle()">Alle</button>
         <button onclick="visSvarte()">Svarte klær</button>
-        <button onclick="visElectric()">Electric</button>
-        <button onclick="visAtilD()">a til d</button>
+        <button onclick="visSupreme()">Supreme</button>
+        <button onclick="visAtilV()">V til V</button>
 
 
 
       </nav>
     </header>
+
     <main>
 
     </main>
@@ -56,13 +57,14 @@
             main.innerHTML +=`
                 <article class="Varer">
                   <h1>${Varer.Name}</h1>
-                  <img src="${pokeSnap.ImageURL}">
-                  <p>Price: ${Varer["Pris"]}</p>
+                  <img src= ${Varer["Bilde"]>
+                  <p>Pris: ${Varer ["Pris"]}
                   <p>Merke: ${Varer ["Merke"]}
+                  <p>
 
-                  <a href="pokestats.html?id=${key}">Detaljer</a>
                 </article>
             `
+          //  <a href="pokestats.html?id=${key}">Detaljer</a>
         }
         function visAlle(){
           main.innerHTML = ``
@@ -87,7 +89,7 @@
             .equalTo("Supreme")
             .on("child_added",visVarer);
         }
-        function visAtilD(){
+        function visAtilV(){
           main.innerHTML = ``
           Varer
           .orderByChild("Merke")
@@ -95,7 +97,13 @@
           .endAt("V")
           .on("child_added",visVarer);
         }
-        */
+        function visFarge(){
+          main.innerHTML = ``
+          Varer
+          .orderByChild("Farge")
+          .
+        }
+
 
     </script>
 
