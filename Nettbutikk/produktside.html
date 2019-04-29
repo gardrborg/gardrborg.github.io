@@ -45,14 +45,14 @@
                 <img src="${Varer.ImageURL}">
                 <p>Pris :${Varer.Pris}</p>
                 <p>Merke:${Varer.Merke}</p>
-                <p :${pokeSnap.MaxCP}</p>
-                <p>Max HP ${pokeSnap.MaxHP}</p>
+                <pStørrelse:${Varer.Størrelse}</p>
+                <p> Plagg: ${pokeSnap.MaxHP}</p>
 
 
               </article>
           `
       }
-      pokemon.on("value",visPokemon)
+      pokemon.on("value",visVarer)
       </script>
 
   </body>
