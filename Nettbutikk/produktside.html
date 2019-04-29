@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="Hovedside.css">
+  </head>
+  <body>
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyBkRfsp9UK-UjN7IzWCs9SRUDmoleDxUBc",
+        authDomain: "nettbutikk-79d79.firebaseapp.com",
+        databaseURL: "https://nettbutikk-79d79.firebaseio.com",
+        projectId: "nettbutikk-79d79",
+        storageBucket: "nettbutikk-79d79.appspot.com",
+        messagingSenderId: "832632369417"
+      };
+      firebase.initializeApp(config);
+    </script>
+      <header>
+      </header>
+      <script>
+      const main = document.querySelector("main");
+
+        var url_string = window.location.href
+        var url = new URL(url_string);
+        var id = url.searchParams.get("id");
+        console.log(id);
+
+      const db = firebase.database();
+      const varer = db.ref("varer/" + id)
+
+      function visvarer(snapshot){
+            //Javascript-funksjon som skriver varene ut på nettsiden i main-elementet
+          console.log(snapshot.val());
+          let Varer = snapshot.val();
+          let key = snapshot.key;
+
+
+          main.innerHTML +=`
+              <article class="Varer">
+                <h1>${pokeSnap.Name}</h1>
+                <img src="${Varer.ImageURL}">
+                <p>Pris :${Varer.Pris}</p>
+                <p>Merke:${Varer.Merke}</p>
+                <p :${pokeSnap.MaxCP}</p>
+                <p>Max HP ${pokeSnap.MaxHP}</p>
+
+
+              </article>
+          `
+      }
+      pokemon.on("value",visPokemon)
+      </script>
+
+  </body>
+</html>

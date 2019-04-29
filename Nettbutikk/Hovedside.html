@@ -43,12 +43,10 @@
     </main>
 
     <script>
-        const main = document.querySelector("main"); // Variabel som referer til mian-elementet
-          // Referanser til databasen
+        const main = document.querySelector("main");
         const db = firebase.database();
-        const Varer = db.ref("Varer"); // Referer til alt som ligger under sko i databasen
+        const Varer = db.ref("Varer");
         function visVarer(snapshot){
-              //Javascript-funksjon som skriver varene ut på nettsiden i main-elementet
             console.log(snapshot.val());
             let varer = snapshot.val();
             let key = snapshot.key;
@@ -58,13 +56,15 @@
 // Detter er selvfølgelig bare et utkast, så kommer til å endre ting etterhvert.
             main.innerHTML +=`
                 <article class="Varer">
+                  <a href="produktside.html?id=${key}">
                   <h1>${Varer.Name}</h1>
                   <img src= ${varer["Bilde"]>
                   <p>Pris: ${varer["Pris"]}</p>
                   <p>Merke: ${varer["Merke"]}</p>
                   <p>Størrelse: ${varer["Størrelse"]}</p>
+                  </a>
                 </article>
-            `
+                  `
           //  <a href="pokestats.html?id=${key}">Detaljer</a>
         }
 
@@ -106,10 +106,14 @@
           main.innerHTML = ``
           varer
           .orderByChild("Farge")
-          .
+          .on("child_added",visVarer);
         }
-        function visLouisVuitton()
-        main.innerHTML =
+        function visLouisVuitton(){
+          main.innerHTML = ``
+          varer
+          .equalTo("LouisVuitton")
+          .on("child_added",visVarer);
+        }
 
 
     </script>
