@@ -30,7 +30,7 @@
         console.log(id);
 
       const db = firebase.database();
-      const varer = db.ref("varer/" + id)
+      const Varer = db.ref("Varer/" + id)
 
       function visvarer(snapshot){
             //Javascript-funksjon som skriver varene ut på nettsiden i main-elementet
@@ -41,19 +41,17 @@
 
           main.innerHTML +=`
               <article class="Varer">
-                <h1>${pokeSnap.Name}</h1>
-                <img src="${Varer.ImageURL}">
+                <img src="${Varer.Bilde}">
                 <p>Pris :${Varer.Pris}</p>
                 <p>Merke:${Varer.Merke}</p>
-                <pStørrelse:${Varer.Størrelse}</p>
-                <p> Plagg: ${pokeSnap.MaxHP}</p>
-
-
+                <p> Plagg: ${Varer.Plagg}</p>
+                <p> Farge: ${Varer.Farge}
               </article>
           `
       }
-      pokemon.on("value",visVarer)
-      </script>
+    //  varer
+    //  .on("value",visVarer)
+    //  </script>
 
   </body>
 </html>

@@ -1,10 +1,14 @@
-.nav{
 
+body{
+  background-color: #f0f0f0;
 }
 main{
   display: grid;
   grid-gap:10px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-left: 1%;
+  padding-right: 1%;
+  background-color: white;
   }
   @media(max-width:1200px){
     main{

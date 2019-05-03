@@ -25,46 +25,60 @@
 
   <body>
     <header>
-      <nav>
+      <div class="sidenav">
         <button onclick="visAlle()">Alle</button>
-        <button onclick="visSvarte()">Svarte klær</button>
+        <button onclick="visGucci()">Gucci</button>
         <button onclick="visSupreme()">Supreme</button>
-        <button onclick="visAtilV()">V til V</button>
-        <button onclick="visStørrelse">Størrelser</button>
-
-
-
-
-      </nav>
+        <button onclick="visHugoBoss()">Hugo Boss</button>
+        <button onclick="visLouisVuitton">Louis Vuitton</button>
+        <button onclick="visVersace">Versace</button>
+        <button onclick="visBukse">Bukser</button>
+        <button onclick="visJakke">Jakker</button>
+        <button onclick="visSko">Sko</button>
+      </div>
     </header>
 
-    <main>
-
-    </main>
+      <main>
+      </main>
 
     <script>
         const main = document.querySelector("main");
         const db = firebase.database();
         const Varer = db.ref("Varer");
+        const Bukser = db.ref("Varer/Bukse")
+        const Gucci = db.ref("Varer/Gucci")
+        const HugoBoss = db.ref("Varer/Hugoboss")
+        const Jakke = db.ref("Varer/Jakke")
+        const LouisVuitton = db.ref("Varer/LouisVuitton")
+        const Sko = db.ref("Varer/Sko")
+        const Supreme = db.ref("Varer/Supreme")
+        const Versace = db.ref("Varer/Versace")
+
         function visVarer(snapshot){
             console.log(snapshot.val());
             let varer = snapshot.val();
             let key = snapshot.key;
 
+            //det under er bare det jeg skrev til læreren etter forrige time
+
 // jeg trenger helt klart hjelp til å skrive koden under, har faktisk ikke sjangs til å gjøre det selv.
 //jeg har ikke rukket å endre alt fra pokemon men jeg får gjort det til neste gang. jeg satser på å få høy måloppnåelse så skal jobbe med det en god del i påskeferien.
 // Detter er selvfølgelig bare et utkast, så kommer til å endre ting etterhvert.
+
             main.innerHTML +=`
                 <article class="Varer">
-                  <a href="produktside.html?id=${key}">
-                  <h1>${Varer.Name}</h1>
-                  <img src= ${varer["Bilde"]>
+                <a href="produktside.html?id=${key}">
+                  <h1>${varer.Name}</h1>
+                  <img src= ${varer["Bilde"]}>
                   <p>Pris: ${varer["Pris"]}</p>
                   <p>Merke: ${varer["Merke"]}</p>
                   <p>Størrelse: ${varer["Størrelse"]}</p>
+                  <p>Farge: ${varer["Frage"]}</p>
+
                   </a>
-                </article>
+                  </article>
                   `
+
           //  <a href="pokestats.html?id=${key}">Detaljer</a>
         }
 
@@ -76,7 +90,12 @@
         }
         visAlle();
 
-        function visSvarte(){
+
+
+
+
+
+        /*function visSvarte(){
           main.innerHTML = ``
           varer
             .orderByChild("Bukser")
@@ -86,11 +105,12 @@
             //  .orderByChild("Genser")
             //  .equalTo("Svart")
             //  .on("child_added",visVarer);
-        }
+        }*/
+
+
         function visSupreme(){
           main.innerHTML = ``
           varer
-            .orderByChild("Supreme")
             .equalTo("Supreme")
             .on("child_added",visVarer);
         }
@@ -112,6 +132,42 @@
           main.innerHTML = ``
           varer
           .equalTo("LouisVuitton")
+          .on("child_added",visVarer);
+        }
+        function visGucci(){
+          main.innerHTML = ``
+          varer
+          .equalTo("Gucci")
+          .on("child_added",visVarer);
+        }
+        function visHugoBoss(){
+          main.innerHTML = ``
+          varer
+          .equalTo("HugoBoss")
+          .on("child_added",visVarer);
+        }
+        function visSko(){
+          main.innerHTML = ``
+          varer
+          .equalTo("Sko")
+          .on("child_added",visVarer);
+        }
+        function visBukse(){
+          main.innerHTML = ``
+          varer
+          .equalTo("Bukse")
+          .on("child_added",visVarer);
+        }
+        function visJakke(){
+          main.innerHTML = ``
+          varer
+          .equalTo("Jakke")
+          .on("child_added",visVarer);
+        }
+        function visVersace(){
+          main.innerHTML = ``
+          varer
+          .equalTo("Versace")
           .on("child_added",visVarer);
         }
 
