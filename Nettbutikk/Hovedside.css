@@ -1,27 +1,117 @@
 
 body{
   background-color: #f0f0f0;
-}
+  text-align: center;
+  }
+  nav{
+    grid-template-columns: 1fr 1fr 1fr
+    border-left: 1px;
+    border-color: black;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    }
+    .dropdown{
+
+    }
+    .content{
+      display: none;
+    }
+    .knapp:hover + .content{
+      display: block;
+    }
+    .Merker{
+      position: absolute;
+      left: 6%;
+      top: 15px;
+    }
+      .plaggInnhold{
+        position: absolute;
+        left: 50%;
+        top: 10px;
+        transform: translateX(-50%);
+      }
+    .navbargrid{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+    .content:hover{
+      display:block;
+        }
+    li{
+      list-style: none;
+      display:inline-flex;
+    }
+    button{
+      background-color: black;
+      color: white;
+    }
+    a{
+      text-decoration: none;
+      color: black;
+    }
+    ul{
+      margin-left: 0px;
+    }
+   .Plagg{
+      margin-top: 3px;
+        }
 main{
   display: grid;
   grid-gap:10px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   padding-left: 1%;
   padding-right: 1%;
   background-color: white;
+  text-decoration: none;
+  color: black;
+  margin-top: 20px;
+  text-decoration: none;
   }
+  img{
+    object-fit: cover;
+    height: 200px;
+    width: 200px;
+  }
+
   @media(max-width:1200px){
-    main{
-      grid-template-columns: 1fr 1fr 1fr
-    }
-  }
-  @media(max-width:900px){
     main{
       grid-template-columns: 1fr 1fr;
     }
   }
-  @media(max-width:600px){
+  @media(max-width:900px){
     main{
       grid-template-columns: 1fr;
     }
   }
+
+  /*css til lideshow*/
+    .Hjem_ForsideBilde{
+      text-align: center;
+      object-fit: ;
+      z-index: -1;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 100px;
+      width: 400px;
+      height: 400px;
+      animation: slider 9s infinite linear;
+      background-size: cover;
+      filter: brightness(80%);
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+    @keyframes slider{
+      0%, 100%{
+        background-image: url(LVsko.jpg);
+      }
+      35%{
+        background-image: url(supremesocks.jpg);
+      }
+      75%{
+        background-image: url(supremegenser.jpg);
+      }
+    }

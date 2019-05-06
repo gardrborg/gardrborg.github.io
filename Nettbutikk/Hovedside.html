@@ -22,32 +22,53 @@
       </script>
 
   </head>
+  <header>
+    <section class="dropdown">
+      <section class="navbargrid">
+        <div class="knapp merker"><button>Merker</button> </div>
+        <div class="content Merker">
+          <ul>
+            <li><button onclick="visGucci()">Gucci</button></li>
+            <li><button onclick="visSupreme()">Supreme</button></li>
+            <li><button onclick="visHugoBoss()">Hugo Boss</button></li>
+            <li><button onclick="visLouisVuitton()">Louis Vuitton</button></li>
+            <li><button onclick="visVersace()">Versace</button></li>
+          </ul>
+        </div>
+       <div class="knapp Plagg"><button>Plagg</button></div>
+          <div class="content PlaggInnhold">
+              <ul>
+                  <li><button onclick="visBukse()">Bukser</button></li>
+                  <li><button onclick="visJakke()">Jakker</button></li>
+                  <li><button onclick="visSko()">Sko</button></li>
+              </ul>
+          </div>
+        <div> <a href="Hovedside.html"> <button>Hjemmeside</button> </a></div>
+      </section>
+
+
+    </section>
+
+  </header>
 
   <body>
-    <header>
-      <div class="sidenav">
-        <button onclick="visAlle()">Alle</button>
-        <button onclick="visGucci()">Gucci</button>
-        <button onclick="visSupreme()">Supreme</button>
-        <button onclick="visHugoBoss()">Hugo Boss</button>
-        <button onclick="visLouisVuitton">Louis Vuitton</button>
-        <button onclick="visVersace">Versace</button>
-        <button onclick="visBukse">Bukser</button>
-        <button onclick="visJakke">Jakker</button>
-        <button onclick="visSko">Sko</button>
-      </div>
-    </header>
-
       <main>
-      </main>
+        <!-- Slideshow container -->
+        <h2>Nyheter!</h2>
+        <div class="Hjem_ForsideBilde">
+        </div>
+        
+
+
+    </main>
 
     <script>
         const main = document.querySelector("main");
         const db = firebase.database();
         const Varer = db.ref("Varer");
-        const Bukser = db.ref("Varer/Bukse")
+        const Bukse = db.ref("Varer/Bukse")
         const Gucci = db.ref("Varer/Gucci")
-        const HugoBoss = db.ref("Varer/Hugoboss")
+        const HugoBoss = db.ref("Varer/HugoBoss")
         const Jakke = db.ref("Varer/Jakke")
         const LouisVuitton = db.ref("Varer/LouisVuitton")
         const Sko = db.ref("Varer/Sko")
@@ -68,108 +89,61 @@
             main.innerHTML +=`
                 <article class="Varer">
                 <a href="produktside.html?id=${key}">
-                  <h1>${varer.Name}</h1>
-                  <img src= ${varer["Bilde"]}>
-                  <p>Pris: ${varer["Pris"]}</p>
-                  <p>Merke: ${varer["Merke"]}</p>
-                  <p>Størrelse: ${varer["Størrelse"]}</p>
-                  <p>Farge: ${varer["Frage"]}</p>
+                  <img src= ${varer.Bilde}>
+                  <p>Pris: ${varer.Pris}</p>
+                  <p>Merke: ${varer.Merke}</p>
+                  <p>Størrelse: ${varer.Størrelse}</p>
+                  <p>Farge: ${varer.Farge}</p>
+                  <p>Plagg: ${varer.Plagg}</p>
+
 
                   </a>
                   </article>
-                  `
+                `
 
           //  <a href="pokestats.html?id=${key}">Detaljer</a>
         }
 
 
-        function visAlle(){
-          main.innerHTML = ``
-          Varer
-          .on("child_added",visVarer);
-        }
-        visAlle();
 
 
 
-
-
-
-        /*function visSvarte(){
-          main.innerHTML = ``
-          varer
-            .orderByChild("Bukser")
-            .equalTo("Svart")
-            .on("child_added",visVarer);
-            //varer
-            //  .orderByChild("Genser")
-            //  .equalTo("Svart")
-            //  .on("child_added",visVarer);
-        }*/
 
 
         function visSupreme(){
           main.innerHTML = ``
-          varer
-            .equalTo("Supreme")
-            .on("child_added",visVarer);
-        }
-        function visAtilV(){
-          main.innerHTML = ``
-          varer
-          .orderByChild("Merke")
-          .startAt("A")
-          .endAt("V")
-          .on("child_added",visVarer);
-        }
-        function visFarge(){
-          main.innerHTML = ``
-          varer
-          .orderByChild("Farge")
-          .on("child_added",visVarer);
+          Supreme.on("child_added",visVarer);
         }
         function visLouisVuitton(){
           main.innerHTML = ``
-          varer
-          .equalTo("LouisVuitton")
-          .on("child_added",visVarer);
+          LouisVuitton.on("child_added",visVarer);
         }
         function visGucci(){
           main.innerHTML = ``
-          varer
-          .equalTo("Gucci")
-          .on("child_added",visVarer);
+          Gucci.on("child_added",visVarer);
         }
         function visHugoBoss(){
           main.innerHTML = ``
-          varer
-          .equalTo("HugoBoss")
-          .on("child_added",visVarer);
+          HugoBoss.on("child_added",visVarer);
         }
         function visSko(){
           main.innerHTML = ``
-          varer
-          .equalTo("Sko")
-          .on("child_added",visVarer);
+          Sko.on("child_added",visVarer);
         }
         function visBukse(){
           main.innerHTML = ``
-          varer
-          .equalTo("Bukse")
-          .on("child_added",visVarer);
+          Bukse.on("child_added",visVarer);
         }
         function visJakke(){
           main.innerHTML = ``
-          varer
-          .equalTo("Jakke")
-          .on("child_added",visVarer);
+          Jakke.on("child_added",visVarer);
         }
         function visVersace(){
           main.innerHTML = ``
-          varer
-          .equalTo("Versace")
-          .on("child_added",visVarer);
+          Versace.on("child_added",visVarer);
         }
+
+
 
 
     </script>
