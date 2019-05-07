@@ -1,0 +1,5 @@
+/*Plassering av produkt*/
+.Plassering{
+  grid-template-columns: auto;
+  
+}

@@ -20,7 +20,36 @@
       firebase.initializeApp(config);
     </script>
       <header>
+        <section class="dropdown">
+          <section class="navbargrid">
+            <div class="knapp merker"><button>Merker</button> </div>
+            <div class="content Merker">
+              <ul>
+                <li><button onclick="visGucci()">Gucci</button></li>
+                <li><button onclick="visSupreme()">Supreme</button></li>
+                <li><button onclick="visHugoBoss()">Hugo Boss</button></li>
+                <li><button onclick="visLouisVuitton()">Louis Vuitton</button></li>
+                <li><button onclick="visVersace()">Versace</button></li>
+              </ul>
+            </div>
+           <div class="knapp Plagg"><button>Plagg</button></div>
+              <div class="content PlaggInnhold">
+                  <ul>
+                      <li><button onclick="visBukse()">Bukser</button></li>
+                      <li><button onclick="visJakke()">Jakker</button></li>
+                      <li><button onclick="visSko()">Sko</button></li>
+                  </ul>
+              </div>
+            <div> <a href="Hovedside.html"> <button>Hjemmeside</button> </a></div>
+          </section>
+        </section>
       </header>
+      <main>
+        <div class="Plassering">
+
+        </div>
+
+      </main>
       <script>
       const main = document.querySelector("main");
 
@@ -40,6 +69,7 @@
       const Supreme = db.ref("Varer/Supreme/" + id)
       const Versace = db.ref("Varer/Versace/" + id)
 
+
       function visVarer(snapshot){
             //Javascript-funksjon som skriver varene ut på nettsiden i main-elementet
           console.log(snapshot.val());
@@ -53,7 +83,7 @@
                 <p>Merke:${Varer.Merke}</p>
                 <p>Plagg: ${Varer.Plagg}</p>
                 <p>Farge: ${Varer.Farge}</p>
-                <p>Størrelse: ${varer.Størrelse}</p>
+                <p>Størrelse: ${Varer.Størrelse}</p>
               </article>
           `
       }
@@ -73,7 +103,7 @@
       else if(id.charAt(0) === "L"){
         LouisVuitton.on("value", visVarer);
       }
-      else if(id.charAt(0) === "SK"){
+      else if(id.charAt(0) === "Sk"){
         Sko.on("value", visVarer);
       }
       else if(id.charAt(0) === "S"){
@@ -81,6 +111,38 @@
       }
       else if(id.charAt(0) === "V"){
         Versace.on("value", visVarer);
+      }
+      function visSupreme(){
+        main.innerHTML = ``
+        Supreme.on("child_added",visVarer);
+      }
+      function visLouisVuitton(){
+        main.innerHTML = ``
+        LouisVuitton.on("child_added",visVarer);
+      }
+      function visGucci(){
+        main.innerHTML = ``
+        Gucci.on("child_added",visVarer);
+      }
+      function visHugoBoss(){
+        main.innerHTML = ``
+        HugoBoss.on("child_added",visVarer);
+      }
+      function visSko(){
+        main.innerHTML = ``
+        Sko.on("child_added",visVarer);
+      }
+      function visBukse(){
+        main.innerHTML = ``
+        Bukse.on("child_added",visVarer);
+      }
+      function visJakke(){
+        main.innerHTML = ``
+        Jakke.on("child_added",visVarer);
+      }
+      function visVersace(){
+        main.innerHTML = ``
+        Versace.on("child_added",visVarer);
       }
 
     //  varer

@@ -5,8 +5,6 @@
     <title>Nettbutikk</title>
     <link rel="stylesheet" href="Hovedside.css">
 
-
-
       <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
       <script>
         // Initialize Firebase
@@ -28,25 +26,28 @@
         <div class="knapp merker"><button>Merker</button> </div>
         <div class="content Merker">
           <ul>
-            <li><button onclick="visGucci()">Gucci</button></li>
-            <li><button onclick="visSupreme()">Supreme</button></li>
-            <li><button onclick="visHugoBoss()">Hugo Boss</button></li>
-            <li><button onclick="visLouisVuitton()">Louis Vuitton</button></li>
-            <li><button onclick="visVersace()">Versace</button></li>
+            <li><button onclick="vis('Gucci')">Gucci</button></li>
+            <li><button onclick="vis('Supreme')">Supreme</button></li>
+            <li><button onclick="vis('HugoBoss')">Hugo Boss</button></li>
+            <li><button onclick="vis('LouisVuitton')">Louis Vuitton</button></li>
+            <li><button onclick="vis('Versace')">Versace</button></li>
           </ul>
         </div>
        <div class="knapp Plagg"><button>Plagg</button></div>
           <div class="content PlaggInnhold">
               <ul>
-                  <li><button onclick="visBukse()">Bukser</button></li>
-                  <li><button onclick="visJakke()">Jakker</button></li>
-                  <li><button onclick="visSko()">Sko</button></li>
+                  <li><button onclick="vis('Bukser')">Bukser</button></li>
+                  <li><button onclick="vis('Jakker')">Jakker</button></li>
+                  <li><button onclick="vis('Sko')">Sko</button></li>
               </ul>
           </div>
         <div> <a href="Hovedside.html"> <button>Hjemmeside</button> </a></div>
       </section>
     </section>
 
+  </header>
+  <header>
+    
   </header>
 
   <body>
@@ -56,33 +57,16 @@
         <div class="Hjem_ForsideBilde">
         </div>
 
-
-
     </main>
 
     <script>
         const main = document.querySelector("main");
         const db = firebase.database();
-        const Varer = db.ref("Varer");
-        const Bukse = db.ref("Varer/Bukse")
-        const Gucci = db.ref("Varer/Gucci")
-        const HugoBoss = db.ref("Varer/HugoBoss")
-        const Jakke = db.ref("Varer/Jakke")
-        const LouisVuitton = db.ref("Varer/LouisVuitton")
-        const Sko = db.ref("Varer/Sko")
-        const Supreme = db.ref("Varer/Supreme")
-        const Versace = db.ref("Varer/Versace")
 
         function visVarer(snapshot){
             console.log(snapshot.val());
             let varer = snapshot.val();
             let key = snapshot.key;
-
-            //det under er bare det jeg skrev til læreren etter forrige time
-
-// jeg trenger helt klart hjelp til å skrive koden under, har faktisk ikke sjangs til å gjøre det selv.
-//jeg har ikke rukket å endre alt fra pokemon men jeg får gjort det til neste gang. jeg satser på å få høy måloppnåelse så skal jobbe med det en god del i påskeferien.
-// Detter er selvfølgelig bare et utkast, så kommer til å endre ting etterhvert.
 
             main.innerHTML +=`
                 <article class="Varer">
@@ -99,44 +83,12 @@
                   </article>
                 `
 
-          //  <a href="pokestats.html?id=${key}">Detaljer</a>
         }
 
-        function visSupreme(){
-          main.innerHTML = ``
-          Supreme.on("child_added",visVarer);
+				function vis(str){
+        	main.innerHTML = ``
+          db.ref("Varer/" + str).on("child_added", visVarer);
         }
-        function visLouisVuitton(){
-          main.innerHTML = ``
-          LouisVuitton.on("child_added",visVarer);
-        }
-        function visGucci(){
-          main.innerHTML = ``
-          Gucci.on("child_added",visVarer);
-        }
-        function visHugoBoss(){
-          main.innerHTML = ``
-          HugoBoss.on("child_added",visVarer);
-        }
-        function visSko(){
-          main.innerHTML = ``
-          Sko.on("child_added",visVarer);
-        }
-        function visBukse(){
-          main.innerHTML = ``
-          Bukse.on("child_added",visVarer);
-        }
-        function visJakke(){
-          main.innerHTML = ``
-          Jakke.on("child_added",visVarer);
-        }
-        function visVersace(){
-          main.innerHTML = ``
-          Versace.on("child_added",visVarer);
-        }
-
-
-
 
     </script>
 
