@@ -31,24 +31,58 @@
 
       const db = firebase.database();
       const Varer = db.ref("Varer/" + id)
+      const Bukse = db.ref("Varer/Bukse/"+ id)
+      const Gucci = db.ref("Varer/Gucci/"+ id)
+      const HugoBoss = db.ref("Varer/HugoBoss/" + id)
+      const Jakke = db.ref("Varer/Jakke/" + id)
+      const LouisVuitton = db.ref("Varer/LouisVuitton/" + id)
+      const Sko = db.ref("Varer/Sko/" + id)
+      const Supreme = db.ref("Varer/Supreme/" + id)
+      const Versace = db.ref("Varer/Versace/" + id)
 
-      function visvarer(snapshot){
+      function visVarer(snapshot){
             //Javascript-funksjon som skriver varene ut på nettsiden i main-elementet
           console.log(snapshot.val());
           let Varer = snapshot.val();
           let key = snapshot.key;
 
-
           main.innerHTML +=`
               <article class="Varer">
-                <img src="${Varer.Bilde}">
+                <img src=${Varer.Bilde}>
                 <p>Pris :${Varer.Pris}</p>
                 <p>Merke:${Varer.Merke}</p>
-                <p> Plagg: ${Varer.Plagg}</p>
-                <p> Farge: ${Varer.Farge}
+                <p>Plagg: ${Varer.Plagg}</p>
+                <p>Farge: ${Varer.Farge}</p>
+                <p>Størrelse: ${varer.Størrelse}</p>
               </article>
           `
       }
+
+      if (id.charAt(0) === "B"){
+        Bukse.on("value", visVarer);
+      }
+      else if(id.charAt(0) === "G"){
+        Gucci.on("value", visVarer);
+      }
+      else if(id.charAt(0) === "H"){
+        HugoBoss.on("value", visVarer);
+      }
+      else if(id.charAt(0) === "J"){
+        Jakke.on("value", visVarer);
+      }
+      else if(id.charAt(0) === "L"){
+        LouisVuitton.on("value", visVarer);
+      }
+      else if(id.charAt(0) === "SK"){
+        Sko.on("value", visVarer);
+      }
+      else if(id.charAt(0) === "S"){
+        Supreme.on("value", visVarer);
+      }
+      else if(id.charAt(0) === "V"){
+        Versace.on("value", visVarer);
+      }
+
     //  varer
     //  .on("value",visVarer)
       </script>

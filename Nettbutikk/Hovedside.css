@@ -3,6 +3,7 @@ body{
   background-color: #f0f0f0;
   text-align: center;
   }
+
   nav{
     grid-template-columns: 1fr 1fr 1fr
     border-left: 1px;
@@ -26,12 +27,13 @@ body{
       left: 6%;
       top: 15px;
     }
-      .plaggInnhold{
+      .PlaggInnhold{
         position: absolute;
         left: 50%;
-        top: 10px;
+        top: 15px;
         transform: translateX(-50%);
       }
+
     .navbargrid{
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
@@ -43,8 +45,9 @@ body{
         }
     li{
       list-style: none;
-      display:inline-flex;
+      display: inline;
     }
+
     button{
       background-color: black;
       color: white;
@@ -53,9 +56,11 @@ body{
       text-decoration: none;
       color: black;
     }
+
     ul{
       margin-left: 0px;
     }
+
    .Plagg{
       margin-top: 3px;
         }
