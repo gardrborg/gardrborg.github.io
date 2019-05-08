@@ -20,71 +20,95 @@
       firebase.initializeApp(config);
     </script>
       <header>
+        <section class="dropdown">
+          <section class="navbargrid">
+            <div class="knapp merker"><button>Merker</button> </div>
+            <div class="content Merker">
+              <ul>
+           		 <li><button onclick="vis('Gucci')">Gucci</button></li>
+            		<li><button onclick="vis('Supreme')">Supreme</button></li>
+            		<li><button onclick="vis('HugoBoss')">Hugo Boss</button></li>
+            		<li><button onclick="vis('LouisVuitton')">Louis Vuitton</button></li>
+            		<li><button onclick="vis('Versace')">Versace</button></li>
+          		</ul>
+            </div>
+           <div class="knapp Plagg"><button>Plagg</button></div>
+              <div class="content PlaggInnhold">
+                  <ul>
+                      <li><button onclick="vis('Bukse')">Bukser</button></li>
+                  		<li><button onclick="vis('Jakke')">Jakker</button></li>
+                  		<li><button onclick="vis('Sko')">Sko</button></li>
+                  </ul>
+              </div>
+            <div> <a href="Hovedside.html"> <button>Hjemmeside</button> </a></div>
+          </section>
+        </section>
       </header>
+      <main>
+        <div class="Plassering">
+
+        </div>
+
+      </main>
       <script>
       const main = document.querySelector("main");
-
         var url_string = window.location.href
         var url = new URL(url_string);
         var id = url.searchParams.get("id");
         console.log(id);
+      	const db = firebase.database();
 
-      const db = firebase.database();
-      const Varer = db.ref("Varer/" + id)
-      const Bukse = db.ref("Varer/Bukse/"+ id)
-      const Gucci = db.ref("Varer/Gucci/"+ id)
-      const HugoBoss = db.ref("Varer/HugoBoss/" + id)
-      const Jakke = db.ref("Varer/Jakke/" + id)
-      const LouisVuitton = db.ref("Varer/LouisVuitton/" + id)
-      const Sko = db.ref("Varer/Sko/" + id)
-      const Supreme = db.ref("Varer/Supreme/" + id)
-      const Versace = db.ref("Varer/Versace/" + id)
+      let kategori = ""
+
+      switch(id.charAt(0)){
+        case "B":
+          kategori = "Bukse";
+          break;
+        case "G":
+          kategori = "Gucci";
+          break;
+        case "H":
+          kategori = "HugoBoss";
+          break;
+        case "J":
+          kategori = "Jakke";
+          break;
+        case "L":
+          kategori = "LouisVuitton";
+          break;
+        case "Sk":
+          kategori = "Sko";
+          break;
+        case "S":
+          kategori = "Supreme";
+          break;
+        case "V":
+          kategori = "Versace";
+          break;
+      }
 
       function visVarer(snapshot){
             //Javascript-funksjon som skriver varene ut på nettsiden i main-elementet
           console.log(snapshot.val());
           let Varer = snapshot.val();
           let key = snapshot.key;
-
           main.innerHTML +=`
               <article class="Varer">
                 <img src=${Varer.Bilde}>
                 <p>Pris :${Varer.Pris}</p>
-                <p>Merke:${Varer.Merke}</p>
-                <p>Plagg: ${Varer.Plagg}</p>
                 <p>Farge: ${Varer.Farge}</p>
-                <p>Størrelse: ${varer.Størrelse}</p>
+                <p>Størrelse: ${Varer.Størrelse}</p>
               </article>
           `
       }
 
-      if (id.charAt(0) === "B"){
-        Bukse.on("value", visVarer);
-      }
-      else if(id.charAt(0) === "G"){
-        Gucci.on("value", visVarer);
-      }
-      else if(id.charAt(0) === "H"){
-        HugoBoss.on("value", visVarer);
-      }
-      else if(id.charAt(0) === "J"){
-        Jakke.on("value", visVarer);
-      }
-      else if(id.charAt(0) === "L"){
-        LouisVuitton.on("value", visVarer);
-      }
-      else if(id.charAt(0) === "SK"){
-        Sko.on("value", visVarer);
-      }
-      else if(id.charAt(0) === "S"){
-        Supreme.on("value", visVarer);
-      }
-      else if(id.charAt(0) === "V"){
-        Versace.on("value", visVarer);
+      db.ref("Varer/"+kategori+"/"+id).on("value", visVarer);
+
+      function vis(str){
+      	main.innerHTML = ``
+      	db.ref("Varer/" + str).on("child_added", visVarer);
       }
 
-    //  varer
-    //  .on("value",visVarer)
       </script>
 
   </body>

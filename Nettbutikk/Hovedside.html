@@ -24,26 +24,27 @@
   </head>
   <header>
     <section class="dropdown">
+
       <section class="navbargrid">
-        <div class="knapp merker"><button>Merker</button> </div>
+        <div class="knapp merker">Merker</div>
         <div class="content Merker">
           <ul>
-            <li><button onclick="visGucci()">Gucci</button></li>
-            <li><button onclick="visSupreme()">Supreme</button></li>
-            <li><button onclick="visHugoBoss()">Hugo Boss</button></li>
-            <li><button onclick="visLouisVuitton()">Louis Vuitton</button></li>
-            <li><button onclick="visVersace()">Versace</button></li>
+            <li><a class="navknapp" onclick="visGucci()">Gucci</a></li>
+            <li><a  class="navknapp" onclick="visSupreme()">Supreme</a></li>
+            <li><a  class="navknapp" onclick="visHugoBoss()">Hugo Boss</a></li>
+            <li><a  class="navknapp" onclick="visLouisVuitton()">Louis Vuitton</a></li>
+            <li><a  class="navknapp" onclick="visVersace()">Versace</a></li>
           </ul>
         </div>
-       <div class="knapp Plagg"><button>Plagg</button></div>
+       <div class="knapp Plagg">Plagg</div>
           <div class="content PlaggInnhold">
               <ul>
-                  <li><button onclick="visBukse()">Bukser</button></li>
-                  <li><button onclick="visJakke()">Jakker</button></li>
-                  <li><button onclick="visSko()">Sko</button></li>
+                  <li><a  class="navknapp" onclick="visBukse()">Bukser</a></li>
+                  <li><a  class="navknapp" onclick="visJakke()">Jakker</a></li>
+                  <li><a  class="navknapp" onclick="visSko()">Sko</a></li>
               </ul>
           </div>
-        <div> <a href="Hovedside.html"> <button>Hjemmeside</button> </a></div>
+        <div> <a href="Hovedside.html">Hjemmeside </a></div>
       </section>
     </section>
 
@@ -51,10 +52,19 @@
 
   <body>
       <main>
+
         <!-- Slideshow container -->
-        <h2>Nyheter!</h2>
-        <div class="Hjem_ForsideBilde">
-        </div>
+
+
+          <div class="Hjem_ForsideBilde">
+          </div>
+
+          <div class="Sales">
+             Nyheter
+         </div>
+
+
+
 
 
 
@@ -78,29 +88,29 @@
             let varer = snapshot.val();
             let key = snapshot.key;
 
-            //det under er bare det jeg skrev til læreren etter forrige time
 
-// jeg trenger helt klart hjelp til å skrive koden under, har faktisk ikke sjangs til å gjøre det selv.
-//jeg har ikke rukket å endre alt fra pokemon men jeg får gjort det til neste gang. jeg satser på å få høy måloppnåelse så skal jobbe med det en god del i påskeferien.
-// Detter er selvfølgelig bare et utkast, så kommer til å endre ting etterhvert.
 
             main.innerHTML +=`
+
                 <article class="Varer">
                 <a href="produktside.html?id=${key}">
                   <img src= ${varer.Bilde}>
                   <p>Pris: ${varer.Pris}</p>
-                  <p>Merke: ${varer.Merke}</p>
                   <p>Størrelse: ${varer.Størrelse}</p>
                   <p>Farge: ${varer.Farge}</p>
-                  <p>Plagg: ${varer.Plagg}</p>
-
 
                   </a>
                   </article>
                 `
-
+                  //<p>Merke: ${varer.Merke}</p>
+                  //<p>Plagg: ${varer.Plagg}</p>
           //  <a href="pokestats.html?id=${key}">Detaljer</a>
         }
+
+      /*  function vis(str){
+        main.innerHTML = ``
+          db.ref("Varer/" + str).on("child_added", visVarer);
+        }*/
 
         function visSupreme(){
           main.innerHTML = ``
@@ -134,6 +144,7 @@
           main.innerHTML = ``
           Versace.on("child_added",visVarer);
         }
+
 
 
 
