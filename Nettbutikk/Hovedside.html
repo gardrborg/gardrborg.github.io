@@ -19,7 +19,7 @@
           messagingSenderId: "832632369417"
         };
         firebase.initializeApp(config);
-      </script> 
+      </script>
 
   </head>
   <header>
@@ -38,7 +38,7 @@
        <div class="knapp Plagg">Plagg</div>
           <div class="content PlaggInnhold">
               <ul>
-                  <li><a  class="navknapp" onclick="visBukse()">Bukser</a></li>
+                  <li><a  class="navknapp" onclick="vis('Bukse')">Bukser</a></li>
                   <li><a  class="navknapp" onclick="visJakke()">Jakker</a></li>
                   <li><a  class="navknapp" onclick="visSko()">Sko</a></li>
               </ul>
@@ -70,14 +70,14 @@
         const main = document.querySelector("main");
         const db = firebase.database();
         const Varer = db.ref("Varer");
-        const Bukse = db.ref("Varer/Bukse")
+      /*  const Bukse = db.ref("Varer/Bukse")
         const Gucci = db.ref("Varer/Gucci")
         const HugoBoss = db.ref("Varer/HugoBoss")
         const Jakke = db.ref("Varer/Jakke")
         const LouisVuitton = db.ref("Varer/LouisVuitton")
         const Sko = db.ref("Varer/Sko")
         const Supreme = db.ref("Varer/Supreme")
-        const Versace = db.ref("Varer/Versace")
+        const Versace = db.ref("Varer/Versace")*/
 
         function visVarer(snapshot){
             console.log(snapshot.val());
@@ -102,12 +102,12 @@
           //  <a href="pokestats.html?id=${key}">Detaljer</a>
         }
 
-      /*  function vis(str){
+        function vis(str){
         main.innerHTML = ``
           db.ref("Varer/" + str).on("child_added", visVarer);
-        }*/
+        }
 
-
+/*
         function visSupreme(){
           main.innerHTML = ``
           Supreme.on("child_added",visVarer);
@@ -140,7 +140,7 @@
           main.innerHTML = ``
           Versace.on("child_added",visVarer);
         }
-
+*/
 
 
 
