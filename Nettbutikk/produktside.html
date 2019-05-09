@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="Hovedside.css">
+    <link rel="stylesheet" href="produktside.css">
+
   </head>
   <body>
     <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
@@ -25,10 +27,10 @@
           <div class="knapp merker">Merker</div>
           <div class="content Merker">
             <ul>
-              <li><a class="navknapp" onclick="visGucci()">Gucci</a></li>
-              <li><a class="navknapp" onclick="visSupreme()">Supreme</a></li>
-              <li><a class="navknapp" onclick="visHugoBoss()">Hugo Boss</a></li>
-              <li><a class="navknapp" onclick="visLouisVuitton()">Louis Vuitton</a></li>
+              <li><a class="navknapp" onclick="vis('Gucci')">Gucci</a></li>
+              <li><a class="navknapp" onclick="vis('Supreme')">Supreme</a></li>
+              <li><a class="navknapp" onclick="vis('HugoBoss')">Hugo Boss</a></li>
+              <li><a class="navknapp" onclick="vis('LouisVuitton')">Louis Vuitton</a></li>
               <li><a class="navknapp" onclick="vis('Versace')">Versace</a></li>
             </ul>
           </div>
@@ -36,8 +38,8 @@
             <div class="content PlaggInnhold">
                 <ul>
                     <li><a  class="navknapp" onclick="vis('Bukse')">Bukser</a></li>
-                    <li><a  class="navknapp" onclick="visJakke()">Jakker</a></li>
-                    <li><a  class="navknapp" onclick="visSko()">Sko</a></li>
+                    <li><a  class="navknapp" onclick="vis('Jakke')">Jakker</a></li>
+                    <li><a  class="navknapp" onclick="vis('Sko')">Sko</a></li>
                 </ul>
             </div>
           <div> <a id="HjemmesideKnapp" href="Hovedside.html">Hjemmeside </a></div>
@@ -94,8 +96,6 @@
               <article class="Varer">
                 <img src=${Varer.Bilde}>
                 <p>Pris :${Varer.Pris}</p>
-                <p>Merke:${Varer.Merke}</p>
-                <p>Plagg: ${Varer.Plagg}</p>
                 <p>Farge: ${Varer.Farge}</p>
                 <p>Størrelse: ${Varer.Størrelse}</p>
               </article>
@@ -110,10 +110,10 @@
                 <a href="produktside.html?id=${key}">
                   <img src= ${varer.Bilde}>
                   <p>Pris: ${varer.Pris}</p>
-                  <p>Merke: ${varer.Merke}</p>
+
                   <p>Størrelse: ${varer.Størrelse}</p>
                   <p>Farge: ${varer.Farge}</p>
-                  <p>Plagg: ${varer.Plagg}</p>
+
                   </a>
                   </article>
                 `

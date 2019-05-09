@@ -24,6 +24,7 @@
         color: white;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+
       }
   li{
     list-style: none;
@@ -55,15 +56,16 @@
       margin-top: 20px;
       padding-top: 40px;
       text-decoration: none;
+      padding-bottom: 25px;
     }
     /*Supreme button*/
-  button {
+  .supremebutton {
       display: inline-block;
       border-radius: 4px;
       background-color: #262525;
       border: none;
       color: #f0f0f0;
-      text-align: center; 
+      text-align: center;
       font-size: 28px;
       padding: 20px;
       width: 200px;
@@ -72,13 +74,13 @@
       margin-left: 50%;
       transform: translateX(-50%);
     }
-    button span {
+    .supremebutton span {
       cursor: pointer;
       display: inline-block;
       position: relative;
       transition: 0.5s;
     }
-    button span:after {
+    .supremebutton span:after {
       content: '\00bb';
       position: absolute;
       opacity: 0;
@@ -87,11 +89,11 @@
       transition: 0.5s;
     }
 
-    button:hover span {
+    .supremebutton:hover span {
       padding-right: 25px;
     }
 
-    button:hover span:after {
+    .supremebutton:hover span:after {
       opacity: 1;
       right: 0;
     }
@@ -174,6 +176,16 @@
       .Plassering_varer{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+      }
+      .Varer{
+        border-style: outset;
+        border-radius: 15px;
+        border-color: darkblue;
+        margin-left: 10px;
+        margin-top: 10px;
+        border-width: 10px;
+        background-image: url(varer_bakgrunn.jpg) 100%;
+      
       }
 
 

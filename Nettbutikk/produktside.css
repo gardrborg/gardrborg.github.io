@@ -3,9 +3,10 @@ main{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+
 //*
 
-*/
+
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -166,6 +167,7 @@ main{
 
   </body>
 </html>
+/*
 
 =======
 /*Plassering av produkt*/
@@ -175,7 +177,4 @@ main{
 }
 img{
 
-}
-p{
-  opacity: 0;
 }

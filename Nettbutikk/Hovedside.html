@@ -28,19 +28,19 @@
         <div class="knapp merker">Merker</div>
         <div class="content Merker">
           <ul>
-            <li><a class="navknapp" onclick="visGucci()">Gucci</a></li>
-            <li><a class="navknapp" onclick="visSupreme()">Supreme</a></li>
-            <li><a class="navknapp" onclick="visHugoBoss()">Hugo Boss</a></li>
-            <li><a class="navknapp" onclick="visLouisVuitton()">Louis Vuitton</a></li>
-            <li><a class="navknapp" onclick="visVersace()">Versace</a></li>
+            <li><button class="navknapp" onclick="vis('Gucci')">Gucci</button></li>
+            <li><a class="navknapp" onclick="vis('Supreme')">Supreme</a></li>
+            <li><a class="navknapp" onclick="vis('HugoBoss')">Hugo Boss</a></li>
+            <li><a class="navknapp" onclick="vis('LouisVuitton')">Louis Vuitton</a></li>
+            <li><a class="navknapp" onclick="vis('Versace')">Versace</a></li>
           </ul>
         </div>
        <div class="knapp Plagg">Plagg</div>
           <div class="content PlaggInnhold">
               <ul>
                   <li><a  class="navknapp" onclick="vis('Bukse')">Bukser</a></li>
-                  <li><a  class="navknapp" onclick="visJakke()">Jakker</a></li>
-                  <li><a  class="navknapp" onclick="visSko()">Sko</a></li>
+                  <li><a  class="navknapp" onclick="vis('Jakke')">Jakker</a></li>
+                  <li><a  class="navknapp" onclick="vis('Sko')">Sko</a></li>
               </ul>
           </div>
         <div> <a id="HjemmesideKnapp" href="Hovedside.html">Hjemmeside </a></div>
@@ -59,7 +59,7 @@
          </div>
          <p></p>
          <p></p>
-         <button onclick= "visSupreme()" class="spremebutton" style="vertical-align:middle"><span>Supreme </span></button>
+         <button onclick= "vis('Supreme')" class="supremebutton" style="vertical-align:middle"><span>Supreme </span></button>
 
 
 
@@ -70,7 +70,7 @@
         const main = document.querySelector("main");
         const db = firebase.database();
         const Varer = db.ref("Varer");
-      /*  const Bukse = db.ref("Varer/Bukse")
+      /* const Bukse = db.ref("Varer/Bukse")
         const Gucci = db.ref("Varer/Gucci")
         const HugoBoss = db.ref("Varer/HugoBoss")
         const Jakke = db.ref("Varer/Jakke")
