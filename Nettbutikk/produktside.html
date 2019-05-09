@@ -29,7 +29,7 @@
               <li><a class="navknapp" onclick="visSupreme()">Supreme</a></li>
               <li><a class="navknapp" onclick="visHugoBoss()">Hugo Boss</a></li>
               <li><a class="navknapp" onclick="visLouisVuitton()">Louis Vuitton</a></li>
-              <li><a class="navknapp" onclick="visVersace()">Versace</a></li>
+              <li><a class="navknapp" onclick="vis('Versace')">Versace</a></li>
             </ul>
           </div>
          <div class="knapp Plagg">Plagg</div>
@@ -85,7 +85,7 @@
           break;
       }
 
-      function visVarer(snapshot){
+      function visValgtVare(snapshot){
             //Javascript-funksjon som skriver varene ut på nettsiden i main-elementet
           console.log(snapshot.val());
           let Varer = snapshot.val();
@@ -94,13 +94,32 @@
               <article class="Varer">
                 <img src=${Varer.Bilde}>
                 <p>Pris :${Varer.Pris}</p>
+                <p>Merke:${Varer.Merke}</p>
+                <p>Plagg: ${Varer.Plagg}</p>
                 <p>Farge: ${Varer.Farge}</p>
                 <p>Størrelse: ${Varer.Størrelse}</p>
               </article>
           `
       }
+      function visVarer(snapshot){
+            console.log(snapshot.val());
+            let varer = snapshot.val();
+            let key = snapshot.key;
+            main.innerHTML +=`
+                <article class="Varer">
+                <a href="produktside.html?id=${key}">
+                  <img src= ${varer.Bilde}>
+                  <p>Pris: ${varer.Pris}</p>
+                  <p>Merke: ${varer.Merke}</p>
+                  <p>Størrelse: ${varer.Størrelse}</p>
+                  <p>Farge: ${varer.Farge}</p>
+                  <p>Plagg: ${varer.Plagg}</p>
+                  </a>
+                  </article>
+                `
+      }
+      db.ref("Varer/"+kategori+"/"+id).on("value", visValgtVare);
 
-      db.ref("Varer/"+kategori+"/"+id).on("value", visVarer);
 
       function vis(str){
       	main.innerHTML = ``
