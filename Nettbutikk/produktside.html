@@ -19,31 +19,29 @@
       };
       firebase.initializeApp(config);
     </script>
-      <header>
-        <section class="dropdown">
-          <section class="navbargrid">
-            <div class="knapp merker"><button>Merker</button> </div>
-            <div class="content Merker">
-              <ul>
-           		 <li><button onclick="vis('Gucci')">Gucci</button></li>
-            		<li><button onclick="vis('Supreme')">Supreme</button></li>
-            		<li><button onclick="vis('HugoBoss')">Hugo Boss</button></li>
-            		<li><button onclick="vis('LouisVuitton')">Louis Vuitton</button></li>
-            		<li><button onclick="vis('Versace')">Versace</button></li>
-          		</ul>
+    <header>
+      <section class="dropdown">
+        <section class="navbargrid">
+          <div class="knapp merker">Merker</div>
+          <div class="content Merker">
+            <ul>
+              <li><a class="navknapp" onclick="visGucci()">Gucci</a></li>
+              <li><a class="navknapp" onclick="visSupreme()">Supreme</a></li>
+              <li><a class="navknapp" onclick="visHugoBoss()">Hugo Boss</a></li>
+              <li><a class="navknapp" onclick="visLouisVuitton()">Louis Vuitton</a></li>
+              <li><a class="navknapp" onclick="visVersace()">Versace</a></li>
+            </ul>
+          </div>
+         <div class="knapp Plagg">Plagg</div>
+            <div class="content PlaggInnhold">
+                <ul>
+                    <li><a  class="navknapp" onclick="vis('Bukse')">Bukser</a></li>
+                    <li><a  class="navknapp" onclick="visJakke()">Jakker</a></li>
+                    <li><a  class="navknapp" onclick="visSko()">Sko</a></li>
+                </ul>
             </div>
-           <div class="knapp Plagg"><button>Plagg</button></div>
-              <div class="content PlaggInnhold">
-                  <ul>
-                      <li><button onclick="vis('Bukse')">Bukser</button></li>
-                  		<li><button onclick="vis('Jakke')">Jakker</button></li>
-                  		<li><button onclick="vis('Sko')">Sko</button></li>
-                  </ul>
-              </div>
-            <div> <a href="Hovedside.html"> <button>Hjemmeside</button> </a></div>
-          </section>
-        </section>
-      </header>
+          <div> <a id="HjemmesideKnapp" href="Hovedside.html">Hjemmeside </a></div>
+    </header>
       <main>
         <div class="Plassering">
 
