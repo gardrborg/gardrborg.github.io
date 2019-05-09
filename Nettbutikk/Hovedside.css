@@ -1,44 +1,148 @@
 
-body{
-  background-color: #f0f0f0;
-  text-align: center;
-  font-family: Cambria, serif;
-  }
 
-  nav{
-    grid-template-columns: 1fr 1fr 1fr
-    border-left: 1px;
-    border-color: black;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
+
+  header{
+        z-index: 100;
     }
     header{
       background-color: #262525;
-      padding: 10px 10px;
+      padding: 15px 15px;
+      grid-template-columns: 1fr 1fr 1fr;
+      position: fixed;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      color: white;
     }
+    body{
+      background-color: #f0f0f0;
+      text-align: center;
+      font-family: Cambria, serif;
+      }
+      footer{
+        background-color: #262525;
+        color: white;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+  li{
+    list-style: none;
+    display: inline;
+    border-left: 3px;
+    background-color: black;
+
+    }
+  a{
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    }
+
+  ul{
+    margin-left: 0px;
+    margin-top: 25px;
+    border-left: 3px;
+  }
+  /*Plassering av produkt*/
+    main{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding-left: 1%;
+      padding-right: 1%;
+      background-color: white;
+      text-decoration: none;
+      color: black;
+      margin-top: 20px;
+      padding-top: 40px;
+      text-decoration: none;
+    }
+    /*Supreme button*/
+  button {
+      display: inline-block;
+      border-radius: 4px;
+      background-color: #f4511e;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 28px;
+      padding: 20px;
+      width: 200px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
+    button span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+    button span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+
+    button:hover span {
+      padding-right: 25px;
+    }
+
+    button:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+    /*----------*/
+    img{
+      object-fit: cover;
+      height: 200px;
+      width: 200px;
+    }
+
+
+
+
+    .navbargrid{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+    .navknapp{
+      color: white;
+      letter-spacing: 2px;
+      border-style: solid;
+      border-color: black;
+      font-size: 25px;
+    }
+
 
     .content{
       display: none;
     }
     .knapp:hover + .content{
-      display: bloc;
+      display: block;
       }
     .Merker{
       position: absolute;
       left: 6%;
       top: 15px;
-      }
+      color: white;
 
+      }
       .PlaggInnhold{
         position: absolute;
         left: 49%;
         top: 15px;
         transform: translateX(-50%);
+        padding: 4px 3px;
 
       }
-        button{
+
+      /*  button{
         border: none;
         color: black;
         padding: 3px 4px;
@@ -51,57 +155,18 @@ body{
         }
         button:hover{
           background-color: #2E3035;
-        }
-
+        }*/
       .Sales{
         padding-top: 450px;
         text-align: center;
-        font-size: 20px;
+        font-size: 60px;
+        display: grid;
+        grid-template-columns: 1fr;
       }
-    .navbargrid{
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      margin-left: 100px;
-      margin-right: 100px;
-    }
     .content:hover{
       display:block;
         }
-    li{
-      list-style: none;
-      display: inline;
-      border-left: 3px;
-      }
-      .navknapp{
-        border-style: solid;
-        padding-left: 1px: black;
-        }
 
-
-    a{
-      cursor: pointer;
-      text-decoration: none;
-      color: black;
-      }
-
-    ul{
-      margin-left: 0px;
-      margin-top: 20px;
-      border-left: 3px;
-
-    }
-    /*Plassering av produkt*/
-      main{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        padding-left: 1%;
-        padding-right: 1%;
-        background-color: white;
-        text-decoration: none;
-        color: black;
-        padding-top: 40px;
-        text-decoration: none;
-      }
       .hjemmeside{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -110,11 +175,7 @@ body{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
       }
-  img{
-    object-fit: cover;
-    height: 200px;
-    width: 200px;
-  }
+
 
   @media(max-width:1200px){
     main{
@@ -127,7 +188,7 @@ body{
     }
   }
 
-  /*css til lideshow*/
+  /*css til slideshow*/
     .Hjem_ForsideBilde{
       text-align: center;
       object-fit: ;
@@ -154,6 +215,7 @@ body{
         background-image: url(supremegenser.jpg);
       }
     }
-    #hjemplagg{
-      opacity: 0;
+
+    #HjemmesideKnapp{
+      color: white;
     }

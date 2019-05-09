@@ -24,16 +24,15 @@
   </head>
   <header>
     <section class="dropdown">
-
       <section class="navbargrid">
         <div class="knapp merker">Merker</div>
         <div class="content Merker">
           <ul>
             <li><a class="navknapp" onclick="visGucci()">Gucci</a></li>
-            <li><a  class="navknapp" onclick="visSupreme()">Supreme</a></li>
-            <li><a  class="navknapp" onclick="visHugoBoss()">Hugo Boss</a></li>
-            <li><a  class="navknapp" onclick="visLouisVuitton()">Louis Vuitton</a></li>
-            <li><a  class="navknapp" onclick="visVersace()">Versace</a></li>
+            <li><a class="navknapp" onclick="visSupreme()">Supreme</a></li>
+            <li><a class="navknapp" onclick="visHugoBoss()">Hugo Boss</a></li>
+            <li><a class="navknapp" onclick="visLouisVuitton()">Louis Vuitton</a></li>
+            <li><a class="navknapp" onclick="visVersace()">Versace</a></li>
           </ul>
         </div>
        <div class="knapp Plagg">Plagg</div>
@@ -44,12 +43,8 @@
                   <li><a  class="navknapp" onclick="visSko()">Sko</a></li>
               </ul>
           </div>
-        <div> <a href="Hovedside.html">Hjemmeside </a></div>
-      </section>
-    </section>
-
+        <div> <a id="HjemmesideKnapp" href="Hovedside.html">Hjemmeside </a></div>
   </header>
-
   <body>
       <main>
 
@@ -58,12 +53,13 @@
 
           <div class="Hjem_ForsideBilde">
           </div>
-
+          <p></p>
           <div class="Sales">
-             Nyheter
+             Supreme Salg!
          </div>
-
-
+         <p></p>
+         <p></p>
+         <button onclick= "visSupreme()" class="spremebutton" style="vertical-align:middle"><span>Supreme </span></button>
 
 
 
@@ -98,7 +94,6 @@
                   <p>Pris: ${varer.Pris}</p>
                   <p>Størrelse: ${varer.Størrelse}</p>
                   <p>Farge: ${varer.Farge}</p>
-
                   </a>
                   </article>
                 `
@@ -111,6 +106,7 @@
         main.innerHTML = ``
           db.ref("Varer/" + str).on("child_added", visVarer);
         }*/
+
 
         function visSupreme(){
           main.innerHTML = ``
@@ -152,4 +148,12 @@
     </script>
 
   </body>
+    <footer>
+      <p>Kontakt oss: VersacciVouioss@gmail.com</p>
+      <p>Hovedkontor:  Aker Brygge, 25</p>
+      <p>Copyright and Terms of use</p>
+
+
+
+    </footer>
 </html>
