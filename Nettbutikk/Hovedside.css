@@ -16,7 +16,12 @@
     }
     .navbargrid button{
       background-color: black;
-    }
+      color: white;
+      cursor: pointer;
+      }
+      .navknapp:hover button{
+        background-color: tomato;
+      }
     body{
       background-color: #f0f0f0;
       text-align: center;
