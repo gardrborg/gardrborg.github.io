@@ -138,8 +138,6 @@
                 `
       }
       db.ref("Varer/"+kategori+"/"+id).on("value", visValgtVare);
-
-
       function vis(str){
       	main.innerHTML = ``
       	db.ref("Varer/" + str).on("child_added", visVarer);
