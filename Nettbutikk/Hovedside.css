@@ -88,6 +88,7 @@
       margin-left: 50%;
       transform: translateX(-50%);
       margin-top: 100px;
+      font-family: Courier, serif;
     }
     .supremebutton span {
       cursor: pointer;
@@ -122,6 +123,7 @@
       background-color: black;
       color: white;
       cursor: pointer;
+      font-family: Courier, serif;
         }
       .navknapp:hover button{
         background-color: tomato;
@@ -215,13 +217,18 @@
         }
 
 
-  @media(max-width:1200px){
+  @media(max-width:1150px){
     main{
       grid-template-columns: 1fr 1fr;
     }
   }
-  @media(max-width:900px){
+  @media(max-width:1000px){
     main{
+      grid-template-columns: 1fr;
+    }
+  }
+  @media(max-width:700px){
+    footer{
       grid-template-columns: 1fr;
     }
   }
