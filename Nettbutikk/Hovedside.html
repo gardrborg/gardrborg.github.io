@@ -4,9 +4,6 @@
     <meta charset="utf-8">
     <title>Nettbutikk</title>
     <link rel="stylesheet" href="Hovedside.css">
-
-
-
       <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
       <script>
         // Initialize Firebase
@@ -73,14 +70,7 @@
         const main = document.querySelector("main");
         const db = firebase.database();
         const Varer = db.ref("Varer");
-      /* const Bukse = db.ref("Varer/Bukse")
-        const Gucci = db.ref("Varer/Gucci")
-        const HugoBoss = db.ref("Varer/HugoBoss")
-        const Jakke = db.ref("Varer/Jakke")
-        const LouisVuitton = db.ref("Varer/LouisVuitton")
-        const Sko = db.ref("Varer/Sko")
-        const Supreme = db.ref("Varer/Supreme")
-        const Versace = db.ref("Varer/Versace")*/
+
 
         function visVarer(snapshot){
             console.log(snapshot.val());
@@ -115,7 +105,7 @@
 
     </script>
   </body>
-  
+
     <footer>
       <br>Kontakt oss: VersacciVouioss@gmail.com
       <p class="footerborder">Hovedkontor:  Aker Brygge, 25</p>
