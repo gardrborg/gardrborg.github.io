@@ -15,6 +15,7 @@
       color: white;
     }
 
+
     body{
       background-color: #f0f0f0;
       text-align: center;
@@ -28,10 +29,10 @@
         grid-template-columns: 1fr 1fr 1fr;
         position: relative;
         bottom: 0;
-
-
-
-      }
+        }
+        footer p{
+          border-left: 1px solid white;
+        }
   li{
     background-color: black;
     list-style: none;

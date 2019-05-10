@@ -113,11 +113,14 @@
                 <img src=${Varer.Bilde}>
                 <p>Pris :${Varer.Pris}</p>
                 <p>Farge: ${Varer.Farge}</p>
-                <p>Størrelse: ${Varer.Størrelse}</p>
-                <p>Merke: ${Varer.Merke}</p>
-
-              </article>
-          `
+                <p>Størrelse: ${Varer.Størrelse}</p>`
+          if(typeof varer.Merke == "undefined"){
+            main.innerHTML += `<p>Merke: ${kategori}</p>`
+          }
+          else{
+            main.innerHTML += `<p>Merke: ${Varer.Merke}</p>`
+          }
+          main.innerHTML += `</article>`
       }
       function visVarer(snapshot){
             console.log(snapshot.val());
