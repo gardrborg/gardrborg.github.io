@@ -47,6 +47,7 @@
           </section>
     </header>
       <main>
+      
         <div class="Produktinfo">
           <h1>Kvalitet fra yppertse klasse</h1>
           Produktinfo: <br>
@@ -58,6 +59,8 @@
           </div>
 
       </main>
+
+
       <script>
       const main = document.querySelector("main");
         var url_string = window.location.href
@@ -66,9 +69,16 @@
         console.log(id);
       	const db = firebase.database();
 
-      let kategori = ""
+        let kategori = ""
+        let numindex = 0;
+        for(var i = 0; i<id.length; i++){
+          if(!isNaN(parseInt(id.charAt(i), 10))){
+  					numindex = i;
+            break;
+          }
+        }
 
-      switch(id.charAt(0)){
+        switch(id.substring(0, numindex)){
         case "B":
           kategori = "Bukse";
           break;
@@ -84,10 +94,10 @@
         case "L":
           kategori = "LouisVuitton";
           break;
-        case "Sk":
+        case "S":
           kategori = "Sko";
           break;
-        case "S":
+        case "SU":
           kategori = "Supreme";
           break;
         case "V":
@@ -106,6 +116,8 @@
                 <p>Pris :${Varer.Pris}</p>
                 <p>Farge: ${Varer.Farge}</p>
                 <p>Størrelse: ${Varer.Størrelse}</p>
+                <p>Merke: ${Varer.Merke}</p>
+
               </article>
           `
       }
