@@ -18,7 +18,7 @@
       background-color: black;
       color: white;
       cursor: pointer;
-      }
+        }
       .navknapp:hover button{
         background-color: tomato;
       }
@@ -39,8 +39,12 @@
     display: inline;
     border-left: 3px;
     background-color: black;
-
     }
+    li button:hover{
+      background-color: tomato;
+      color: white;
+    }
+
   a{
     cursor: pointer;
     text-decoration: none;
