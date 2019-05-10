@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Product</title>
+    <link rel="stylesheet" type="text/css" href="andreas sin.css">
+
+  </head>
+  <body>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+    <script>
+      var config = {
+        apiKey: "AIzaSyAFUuR8I6MVgw8v_quuSbdgLpOmXguLi_E",
+        authDomain: "he-brew-coffee.firebaseapp.com",
+        databaseURL: "https://he-brew-coffee.firebaseio.com",
+        projectId: "he-brew-coffee",
+        storageBucket: "he-brew-coffee.appspot.com",
+        messagingSenderId: "921439253073"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <header>
+      <nav>
+        <img id="coffecup_logo" src="coffeecup_logo2.png">
+        <a href="Main_Site.html">Home</a>
+        <a href="Coffee_Site.html">Coffee</a>
+        <a href="Explore_Site.html">Explore</a>
+      </nav>
+    </header>
+    <main>
+      <section class="ProductSite">
+
+      </section>
+    </main>
+
+    <script>
+      const ProductSite = document.querySelector(".ProductSite");
+      var url_string = window.location.href;
+      var url = new URL(url_string);
+      var id = url.searchParams.get("id");
+      const db = firebase.database();
+      const Coffee =db.ref("coffee/" + id)
+
+      function showCoffee(snapshot){
+          let coffee = snapshot.val();
+          let key = snapshot.key;
+          ProductSite.innerHTML +=`
+            <article class="coffee_product">
+              <div class="image_product">
+                <img id="image_product" src=${coffee["ImageURL"]}>
+              </div>
+              <div class="info_product">
+              <h1 id="Brandname"> ${coffee.Brand}</h1>
+              <h1 id="header_product">${coffee.Name}</h1>
+              <p>Country: ${coffee["Country"]}</p>
+              <p>Main Aroma: ${coffee["Aroma 1"]}</p>
+              <p>Second Aroma: ${coffee["Aroma 2"]}</p>
+                <div class="PriceandCart">
+                  <p>Price: ${coffee["Price"]}</p>
+                  <button id="Cart" onclick="addToCart()">Add to Cart</button>
+                </div>
+              <p>Weight: ${coffee["Weight"]}</p>
+              <p>${coffee["Description"]}</p>
+              </div>
+            </article>
+          `
+        }
+        Coffee.on("value", showCoffee);
+
+    </script>
+
+  </body>
+</html>
