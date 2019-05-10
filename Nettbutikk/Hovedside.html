@@ -100,9 +100,7 @@
                   </a>
                   </article>
                 `
-                  //<p>Merke: ${varer.Merke}</p>
-                  //<p>Plagg: ${varer.Plagg}</p>
-          //  <a href="pokestats.html?id=${key}">Detaljer</a>
+                  
         }
 
         function vis(str){
@@ -110,50 +108,16 @@
           db.ref("Varer/" + str).on("child_added", visVarer);
         }
 
-/*
-        function visSupreme(){
-          main.innerHTML = ``
-          Supreme.on("child_added",visVarer);
-        }
-        function visLouisVuitton(){
-          main.innerHTML = ``
-          LouisVuitton.on("child_added",visVarer);
-        }
-        function visGucci(){
-          main.innerHTML = ``
-          Gucci.on("child_added",visVarer);
-        }
-        function visHugoBoss(){
-          main.innerHTML = ``
-          HugoBoss.on("child_added",visVarer);
-        }
-        function visSko(){
-          main.innerHTML = ``
-          Sko.on("child_added",visVarer);
-        }
-        function visBukse(){
-          main.innerHTML = ``
-          Bukse.on("child_added",visVarer);
-        }
-        function visJakke(){
-          main.innerHTML = ``
-          Jakke.on("child_added",visVarer);
-        }
-        function visVersace(){
-          main.innerHTML = ``
-          Versace.on("child_added",visVarer);
-        }
-*/
+
 
 
 
 
     </script>
-
   </body>
     <footer>
       <p>Kontakt oss: VersacciVouioss@gmail.com</p>
       <p>Hovedkontor:  Aker Brygge, 25</p>
       <p>Copyright and Terms of use</p>
-      </footer>
+    </footer>
 </html>
