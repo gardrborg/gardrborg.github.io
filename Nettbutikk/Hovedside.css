@@ -200,9 +200,12 @@
         margin-left: 10px;
         margin-top: 10px;
         border-width: 10px;
-        background-image: url(varer_bakgrunn.jpg) 100%;
+        overflow: hidden;
+        }
+        .Varer img:hover{
+          transform: scale(1.2)
 
-      }
+        }
 
 
   @media(max-width:1200px){
