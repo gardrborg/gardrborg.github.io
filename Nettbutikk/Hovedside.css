@@ -87,6 +87,7 @@
       cursor: pointer;
       margin-left: 50%;
       transform: translateX(-50%);
+      margin-top: 100px;
     }
     .supremebutton span {
       cursor: pointer;
@@ -158,8 +159,9 @@
         top: 15px;
         transform: translateX(-50%);
         padding: 4px 3px;
-
-
+      }
+      .Produktinfo{
+        text-align: left;
       }
 
       /*  button{
