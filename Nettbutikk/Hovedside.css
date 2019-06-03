@@ -87,6 +87,7 @@
       transform: translateX(-50%);
       margin-top: 100px;
       font-family: Courier, serif;
+      margin-bottom: 20px;
     }
     .supremebutton span {
       cursor: pointer;
@@ -117,6 +118,10 @@
       height: 200px;
       width: 200px;
     }
+    .omOss{
+      grid-column: 2 / 4;
+      font-size: 25px;
+          }
     .navbargrid button{
       background-color: black;
       color: white;
