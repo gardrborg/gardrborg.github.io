@@ -42,9 +42,10 @@
     li button:hover{
       background-color: tomato;
       color: white;
-
     }
-
+    iframe{
+      margin-top: 50px;
+    }
   a{
     cursor: pointer;
     text-decoration: none;
@@ -85,7 +86,7 @@
       cursor: pointer;
       margin-left: 50%;
       transform: translateX(-50%);
-      margin-top: 100px;
+      margin-top: 40px;
       font-family: Courier, serif;
       margin-bottom: 20px;
     }
@@ -113,15 +114,28 @@
       right: 0;
     }
     /*----------*/
-    img{
+    .Varer img{
       object-fit: cover;
       height: 200px;
       width: 200px;
     }
+    .forsidebilde img{
+      width: 350px;
+      height: 450px;
+    }
+    .Sortemang{
+      margin-top: 30px;
+
+    }
+    .Sortemang h1{
+      font-size: 25px;
+    }
+
     .omOss{
       grid-column: 2 / 4;
       font-size: 25px;
-          }
+      margin-top: 50px;
+      }
     .navbargrid button{
       background-color: black;
       color: white;
@@ -145,6 +159,14 @@
       border-style: solid;
       border-color: black;
       font-size: 23px;
+    }
+    .Sortemang{
+      cursor: pointer;
+      font-size: 20px;
+    }
+    .Sortemang img{
+      width: 200px;
+      height:300px;
     }
 
 
@@ -243,7 +265,7 @@
       z-index: 10;
       position: absolute;
       left: 50%;
-      transform: translateX(-50%);
+      transform: translateX(-140%);
       top: 70px;
       width: 400px;
       height: 400px;
