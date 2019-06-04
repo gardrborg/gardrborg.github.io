@@ -123,9 +123,13 @@
       width: 350px;
       height: 450px;
     }
+    .Sortemang2 img{
+      width: 300px;
+      height: 300px;
+      cursor: pointer;
+    }
     .Sortemang{
       margin-top: 30px;
-
     }
     .Sortemang h1{
       font-size: 25px;
@@ -262,7 +266,7 @@
     .Hjem_ForsideBilde{
       text-align: center;
       object-fit: ;
-      z-index: 10;
+      
       position: absolute;
       left: 50%;
       transform: translateX(-140%);

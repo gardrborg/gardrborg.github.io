@@ -15,15 +15,18 @@
           storageBucket: "nettbutikk-79d79.appspot.com",
           messagingSenderId: "832632369417"
         };
+
         firebase.initializeApp(config);
       </script>
 
   </head>
+
   <header>
+
     <section class="dropdown">
       <section class="navbargrid">
         <div class="knapp merker">Merker</div>
-          <div class="content Merker">
+        <div class="content Merker">
           <ul>
             <li><button class="navknapp" onclick="vis('Gucci')">Gucci</button></li>
             <li><button class="navknapp" onclick="vis('Supreme')">Supreme</button></li>
@@ -44,32 +47,28 @@
         </section>
   </header>
   <body>
-
     <main>
-        <div class="Hjem_ForsideBilde">
-
+       <div class="Sortemang2">
+         <h1>Vårt sortemang av Gucci fra ypperste klasse</h1>
+         <img onclick="vis('Gucci')" src="https://www.paragon.com.sg/media/1/stores/g/gucci_logo_800x800.png" alt="">
         </div>
-        <p></p>
-        <div class="sale">
-         <h1>Masse Salg!</h1>
-        <a href="produktmeny.html">
-         <button  class="supremebutton" style="vertical-align:middle"><span>Dykk inn i våre salg!</span></button></a>
-        <a href="merkemeny.html">
-          <button  class="supremebutton" style="vertical-align:middle"><span>Store merker!</span></button></a>
-       </div>
-         <div class="forsidebilde">
-           <img src="https://rockythemes.com/nimva/wp-content/uploads/2014/07/hugo-boss-grey-shirt-2.jpg" alt="">
-         </div>
-         <iframe width="450" height="315" src="https://www.youtube.com/embed/P2tYoWqHe10" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-         <section class="omOss">
-           <h1>Om Oss!</h1>
-           <p>Vi er butikk som har ambisjoner om å bryte oss gjennom i motemarkedet.
-           Vi har rene, ekte produkter som kommer fra fabrikker i USA hvor arbeiderne får god lønn og et bra miljø.
-           Vi støtter arbeid mot barnearbeid så mye at hele 2% av av hvert produkt som blir solgt sendes ned til organisasjoner som jobber mot dette.
-           Dette er organisasjoner som for eksempel Røde Kors, Kirkens nødhjelp og Redd Barna.</p>
-          </section>
-       </main>
-
+        <div class="Sortemang2">
+        <h1> Vårt sortemang av Hugo Boss av beste klasse</h1>
+          <img onclick="vis('HugoBoss')"src="https://www.centralparkjakarta.com/wp-content/uploads/2017/11/boss.jpg" alt="">
+        </div>
+        <div class="Sortemang2">
+        <h1>  Vårt best sortemang av Versace</h1>
+          <img onclick="vis('Versace')" src="https://www.paragon.com.sg/media/1/stores/v/versace_logo_800.jpg" alt="">
+        </div>
+        <div class="Sortemang2">
+        <h1>  Vårt best sortemang av Louis Vuitton</h1>
+          <img onclick="vis('LouisVuitton')" src="https://ballzbeatz.com/wp-content/uploads/2018/01/Louis-Vuitton-Logo-V-Vinyl-Decal-Sticker.jpg" alt="">
+        </div>
+        <div class="Sortemang2">
+        <h1>  Vårt best sortemang av Supreme</h1>
+          <img onclick="vis('Supreme')" src="https://fontmeme.com/images/Supreme-Logo.jpg" alt="">
+        </div>
+    </main>
 
     <script>
         const main = document.querySelector("main");
