@@ -246,6 +246,7 @@
         }
 
 
+
   @media(max-width:1150px){
     main{
       grid-template-columns: 1fr 1fr;
@@ -265,8 +266,8 @@
   /*css til slideshow*/
     .Hjem_ForsideBilde{
       text-align: center;
-      object-fit: ;
-      
+
+      z-index: 10;
       position: absolute;
       left: 50%;
       transform: translateX(-140%);
@@ -274,7 +275,6 @@
       width: 400px;
       height: 400px;
       animation: slider 9s infinite linear;
-      background-size: cover;
       filter: brightness(100%);
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     }
