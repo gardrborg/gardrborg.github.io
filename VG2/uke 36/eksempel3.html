@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>God Morgen!</h1>
+    <img src="bilderuke36/racer.jpg" id="bilde" alt="">
+    <script>
+      var bilder = ["bilderuke36/racer.jpg","bilder/isgard.jpg", "bilder/Juan.jpg"];
+      var bilde = document.getElementById("bilde");
+      var tilfeldig = Math.random()*3;
+      var tilfeldigAvrundet = Math.floor(tilfeldig);
+      bilde.src = bilder[tilfeldigAvrundet];
+
+    </script>
+
+  </body>
+</html>

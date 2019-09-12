@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Gjettelek!</h1>
+    <script>
+      var a=0; var b=100;
+      var fasit =Math.floor(Math.random()*b+a)
+      var maksForsøk=5;var antallGjett=1;
+      alert("Jeg har tenkt på et tall mellom "+a+ " og "+b+". Du må gjette dette.")
+      var gjett=Number(prompt("Gjett et tall. Du har " + maksForsøk+ "forsøk"))
+      while (gjett !=fasit && antallGjett<maksForsøk){
+        if (gjett>fasit){
+          alert("Du har gjettet på" +gjett+ "er for høyt!")
+      }else
+      {
+        alert("Du har gjettet på" +gjett+ "er for lavt!")
+      }
+      gjett=Number(prompt("Gjett igjen (du har brukt "+antallGjett+"forsøk)."))
+      antallGjett+=1
+      }
+      if (gjett==fasit){
+        document.write("Du fikk riktig svar og vant en skikkelig svart neger:) Svaret er "+gjett+ ". Du brukte "+ antallGjett+ "forsøk." )
+      }else{
+        document.write("du har brukt opp dine "+maksForsøk+" gjett og får ikke en slave i dag, men siden vi har mange jøder så kan du brenne en hjemme. Det riktige svaret var "+fasit+".")
+      }
+
+    </script>
+
+  </body>
+</html>
